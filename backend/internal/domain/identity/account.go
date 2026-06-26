@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/primandproper/platform/database/filtering"
+	"github.com/primandproper/platform-go/database/filtering"
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )

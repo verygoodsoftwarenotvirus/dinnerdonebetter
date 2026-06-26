@@ -8,12 +8,12 @@ import (
 	paymentskeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments/keys"
 	generated "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/payments/generated"
 
-	"github.com/primandproper/platform/database"
-	"github.com/primandproper/platform/database/filtering"
-	platformerrors "github.com/primandproper/platform/errors"
-	"github.com/primandproper/platform/identifiers"
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/database"
+	"github.com/primandproper/platform-go/database/filtering"
+	platformerrors "github.com/primandproper/platform-go/errors"
+	"github.com/primandproper/platform-go/identifiers"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 const (

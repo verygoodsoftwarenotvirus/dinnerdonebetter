@@ -4,12 +4,12 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/auth"
 	paymentswebhook "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/payments/http"
 
-	"github.com/primandproper/platform/healthcheck"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/metrics"
-	"github.com/primandproper/platform/observability/tracing"
-	"github.com/primandproper/platform/routing"
-	routingcfg "github.com/primandproper/platform/routing/config"
+	"github.com/primandproper/platform-go/healthcheck"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/metrics"
+	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/routing"
+	routingcfg "github.com/primandproper/platform-go/routing/config"
 
 	"github.com/samber/do/v2"
 )

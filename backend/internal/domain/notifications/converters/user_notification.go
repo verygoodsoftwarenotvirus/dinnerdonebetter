@@ -3,7 +3,7 @@ package converters
 import (
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications"
 
-	"github.com/primandproper/platform/identifiers"
+	"github.com/primandproper/platform-go/identifiers"
 )
 
 // ConvertUserNotificationToUserNotificationUpdateRequestInput creates a UserNotificationUpdateRequestInput from a UserNotification.

@@ -17,11 +17,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/identity/grpc/converters"
 	uploadedmediaconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/uploadedmedia/grpc/converters"
 
-	platformerrors "github.com/primandproper/platform/errors"
-	errorsgrpc "github.com/primandproper/platform/errors/grpc"
-	"github.com/primandproper/platform/identifiers"
-	"github.com/primandproper/platform/observability"
-	platformkeys "github.com/primandproper/platform/observability/keys"
+	platformerrors "github.com/primandproper/platform-go/errors"
+	errorsgrpc "github.com/primandproper/platform-go/errors/grpc"
+	"github.com/primandproper/platform-go/identifiers"
+	"github.com/primandproper/platform-go/observability"
+	platformkeys "github.com/primandproper/platform-go/observability/keys"
 
 	"github.com/google/uuid"
 	"google.golang.org/grpc"

@@ -15,11 +15,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/uploadedmedia/grpc/converters"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	"github.com/primandproper/platform/database/filtering"
-	loggingnoop "github.com/primandproper/platform/observability/logging/noop"
-	"github.com/primandproper/platform/observability/tracing"
-	"github.com/primandproper/platform/reflection"
-	mockuploads "github.com/primandproper/platform/uploads/mock"
+	"github.com/primandproper/platform-go/database/filtering"
+	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
+	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/reflection"
+	mockuploads "github.com/primandproper/platform-go/uploads/mock"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

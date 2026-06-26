@@ -6,12 +6,12 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/notifications/generated"
 
-	"github.com/primandproper/platform/cryptography/encryption"
-	"github.com/primandproper/platform/cryptography/encryption/salsa20"
-	"github.com/primandproper/platform/database"
-	databasecfg "github.com/primandproper/platform/database/config"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/cryptography/encryption"
+	"github.com/primandproper/platform-go/cryptography/encryption/salsa20"
+	"github.com/primandproper/platform-go/database"
+	databasecfg "github.com/primandproper/platform-go/database/config"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 const (

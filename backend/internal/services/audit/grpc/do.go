@@ -4,8 +4,8 @@ import (
 	auditmanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit/manager"
 	auditsvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/audit"
 
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
 
 	"github.com/samber/do/v2"
 )

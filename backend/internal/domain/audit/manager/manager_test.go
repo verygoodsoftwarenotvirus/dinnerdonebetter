@@ -9,11 +9,11 @@ import (
 	auditmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit/mock"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	"github.com/primandproper/platform/database/filtering"
-	mockdatabase "github.com/primandproper/platform/database/mock"
-	loggingnoop "github.com/primandproper/platform/observability/logging/noop"
-	tracingnoop "github.com/primandproper/platform/observability/tracing/noop"
-	"github.com/primandproper/platform/reflection"
+	"github.com/primandproper/platform-go/database/filtering"
+	mockdatabase "github.com/primandproper/platform-go/database/mock"
+	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
+	tracingnoop "github.com/primandproper/platform-go/observability/tracing/noop"
+	"github.com/primandproper/platform-go/reflection"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

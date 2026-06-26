@@ -7,10 +7,10 @@ import (
 	analyticspb "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/analytics"
 	grpctypes "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/types"
 
-	"github.com/primandproper/platform/analytics/multisource"
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/analytics/multisource"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

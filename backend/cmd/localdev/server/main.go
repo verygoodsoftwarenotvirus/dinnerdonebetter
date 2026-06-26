@@ -18,10 +18,10 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/localdev"
 	identitygenerated "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/identity/generated"
 
-	"github.com/primandproper/platform/database"
-	"github.com/primandproper/platform/identifiers"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/database"
+	"github.com/primandproper/platform-go/identifiers"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 const (

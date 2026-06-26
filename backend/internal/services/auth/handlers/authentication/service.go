@@ -9,12 +9,12 @@ import (
 	identitymanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/manager"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth"
 
-	"github.com/primandproper/platform/authentication/totp"
-	perrors "github.com/primandproper/platform/errors"
-	"github.com/primandproper/platform/messagequeue"
-	msgconfig "github.com/primandproper/platform/messagequeue/config"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/authentication/totp"
+	perrors "github.com/primandproper/platform-go/errors"
+	"github.com/primandproper/platform-go/messagequeue"
+	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
 
 	"github.com/go-oauth2/oauth2/v4/server"
 )

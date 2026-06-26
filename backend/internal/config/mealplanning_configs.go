@@ -7,10 +7,10 @@ import (
 	"context"
 	"fmt"
 
-	analyticscfg "github.com/primandproper/platform/analytics/config"
-	databasecfg "github.com/primandproper/platform/database/config"
-	msgconfig "github.com/primandproper/platform/messagequeue/config"
-	"github.com/primandproper/platform/observability"
+	analyticscfg "github.com/primandproper/platform-go/analytics/config"
+	databasecfg "github.com/primandproper/platform-go/database/config"
+	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
+	"github.com/primandproper/platform-go/observability"
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/hashicorp/go-multierror"

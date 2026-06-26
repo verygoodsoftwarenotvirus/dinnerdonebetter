@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/primandproper/platform/identifiers"
+	"github.com/primandproper/platform-go/identifiers"
 
 	fake "github.com/brianvoe/gofakeit/v7"
 )

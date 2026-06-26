@@ -12,10 +12,10 @@ import (
 	httpapi "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/build/services/api/http"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
 
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/profiling"
-	"github.com/primandproper/platform/server/http"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/profiling"
+	"github.com/primandproper/platform-go/server/http"
 )
 
 type Server struct {

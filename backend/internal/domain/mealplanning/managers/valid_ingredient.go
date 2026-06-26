@@ -11,11 +11,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
 	eatingindexing "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/mealplanning/indexing"
 
-	"github.com/primandproper/platform/database/filtering"
-	platformerrors "github.com/primandproper/platform/errors"
-	"github.com/primandproper/platform/observability"
-	platformkeys "github.com/primandproper/platform/observability/keys"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/database/filtering"
+	platformerrors "github.com/primandproper/platform-go/errors"
+	"github.com/primandproper/platform-go/observability"
+	platformkeys "github.com/primandproper/platform-go/observability/keys"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 func (m *mealPlanningManager) SearchValidIngredients(ctx context.Context, query string, useSearchService bool, filter *filtering.QueryFilter) (*filtering.QueryFilteredResult[types.ValidIngredient], error) {

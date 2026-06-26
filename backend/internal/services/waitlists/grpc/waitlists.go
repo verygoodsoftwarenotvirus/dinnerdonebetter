@@ -10,7 +10,7 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/types"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/waitlists/grpc/converters"
 
-	errorsgrpc "github.com/primandproper/platform/errors/grpc"
+	errorsgrpc "github.com/primandproper/platform-go/errors/grpc"
 
 	"google.golang.org/grpc/codes"
 )

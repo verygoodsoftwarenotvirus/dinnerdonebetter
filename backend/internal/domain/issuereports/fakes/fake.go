@@ -5,7 +5,7 @@ import (
 
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports"
 
-	"github.com/primandproper/platform/identifiers"
+	"github.com/primandproper/platform-go/identifiers"
 
 	fake "github.com/brianvoe/gofakeit/v7"
 )

@@ -3,7 +3,7 @@ package fakes
 import (
 	uploadedmedia "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
 
-	"github.com/primandproper/platform/identifiers"
+	"github.com/primandproper/platform-go/identifiers"
 
 	fake "github.com/brianvoe/gofakeit/v7"
 )

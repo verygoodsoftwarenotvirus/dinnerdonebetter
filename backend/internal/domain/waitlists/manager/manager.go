@@ -8,11 +8,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/waitlists"
 	waitlistkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/waitlists/keys"
 
-	"github.com/primandproper/platform/database/filtering"
-	"github.com/primandproper/platform/messagequeue"
-	msgconfig "github.com/primandproper/platform/messagequeue/config"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/database/filtering"
+	"github.com/primandproper/platform-go/messagequeue"
+	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 const (

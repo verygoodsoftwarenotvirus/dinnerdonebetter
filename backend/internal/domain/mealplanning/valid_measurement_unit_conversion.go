@@ -5,8 +5,8 @@ import (
 	"encoding/gob"
 	"time"
 
-	"github.com/primandproper/platform/database/filtering"
-	"github.com/primandproper/platform/numbers"
+	"github.com/primandproper/platform-go/database/filtering"
+	"github.com/primandproper/platform-go/numbers"
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )

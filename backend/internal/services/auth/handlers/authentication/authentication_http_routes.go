@@ -3,7 +3,7 @@ package authentication
 import (
 	"net/http"
 
-	"github.com/primandproper/platform/observability"
+	"github.com/primandproper/platform-go/observability"
 )
 
 // AuthorizeHandler is our oauth2 auth route.

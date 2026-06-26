@@ -12,10 +12,10 @@ import (
 	mealplanningnotifications "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/notifications"
 	domainnotifications "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications"
 
-	"github.com/primandproper/platform/database/filtering"
-	notifications "github.com/primandproper/platform/notifications/mobile"
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/logging"
+	"github.com/primandproper/platform-go/database/filtering"
+	notifications "github.com/primandproper/platform-go/notifications/mobile"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/logging"
 
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/metric"

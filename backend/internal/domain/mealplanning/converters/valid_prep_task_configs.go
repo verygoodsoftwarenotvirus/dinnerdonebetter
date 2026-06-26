@@ -3,7 +3,7 @@ package converters
 import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
 
-	"github.com/primandproper/platform/identifiers"
+	"github.com/primandproper/platform-go/identifiers"
 )
 
 // ConvertValidPrepTaskConfigCreationRequestInputToValidPrepTaskConfigDatabaseCreationInput creates a ValidPrepTaskConfigDatabaseCreationInput from a ValidPrepTaskConfigCreationRequestInput.

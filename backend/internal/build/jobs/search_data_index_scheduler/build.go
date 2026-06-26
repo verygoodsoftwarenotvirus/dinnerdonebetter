@@ -10,14 +10,14 @@ import (
 	identityrepo "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/identity"
 	mealplanningrepo "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/mealplanning"
 
-	databasecfg "github.com/primandproper/platform/database/config"
-	"github.com/primandproper/platform/database/postgres"
-	msgconfig "github.com/primandproper/platform/messagequeue/config"
-	"github.com/primandproper/platform/observability"
-	loggingcfg "github.com/primandproper/platform/observability/logging/config"
-	metricscfg "github.com/primandproper/platform/observability/metrics/config"
-	tracingcfg "github.com/primandproper/platform/observability/tracing/config"
-	"github.com/primandproper/platform/search/text/indexing"
+	databasecfg "github.com/primandproper/platform-go/database/config"
+	"github.com/primandproper/platform-go/database/postgres"
+	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
+	"github.com/primandproper/platform-go/observability"
+	loggingcfg "github.com/primandproper/platform-go/observability/logging/config"
+	metricscfg "github.com/primandproper/platform-go/observability/metrics/config"
+	tracingcfg "github.com/primandproper/platform-go/observability/tracing/config"
+	"github.com/primandproper/platform-go/search/text/indexing"
 
 	"github.com/samber/do/v2"
 )

@@ -15,8 +15,8 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/fakes"
 	pgtesting "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/testing"
 
-	"github.com/primandproper/platform/database/filtering"
-	"github.com/primandproper/platform/identifiers"
+	"github.com/primandproper/platform-go/database/filtering"
+	"github.com/primandproper/platform-go/identifiers"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
