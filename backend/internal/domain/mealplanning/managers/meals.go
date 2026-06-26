@@ -10,11 +10,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/converters"
 	mealplanningkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/keys"
 
-	"github.com/primandproper/platform/database/filtering"
-	platformerrors "github.com/primandproper/platform/errors"
-	"github.com/primandproper/platform/observability"
-	platformkeys "github.com/primandproper/platform/observability/keys"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/database/filtering"
+	platformerrors "github.com/primandproper/platform-go/errors"
+	"github.com/primandproper/platform-go/observability"
+	platformkeys "github.com/primandproper/platform-go/observability/keys"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 func (m *mealPlanningManager) ListMeals(ctx context.Context, filter *filtering.QueryFilter) (*filtering.QueryFilteredResult[types.Meal], error) {

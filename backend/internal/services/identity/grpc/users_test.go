@@ -14,9 +14,9 @@ import (
 	uploadedmediasvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/uploaded_media"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	"github.com/primandproper/platform/database/filtering"
-	"github.com/primandproper/platform/reflection"
-	mockuploads "github.com/primandproper/platform/uploads/mock"
+	"github.com/primandproper/platform-go/database/filtering"
+	"github.com/primandproper/platform-go/reflection"
+	mockuploads "github.com/primandproper/platform-go/uploads/mock"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

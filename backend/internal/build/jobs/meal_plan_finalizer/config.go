@@ -3,9 +3,9 @@ package mealplanfinalizer
 import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
 
-	databasecfg "github.com/primandproper/platform/database/config"
-	msgconfig "github.com/primandproper/platform/messagequeue/config"
-	"github.com/primandproper/platform/observability"
+	databasecfg "github.com/primandproper/platform-go/database/config"
+	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
+	"github.com/primandproper/platform-go/observability"
 
 	"github.com/samber/do/v2"
 )

@@ -6,9 +6,9 @@ import (
 
 	identitykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/keys"
 
-	platformerrors "github.com/primandproper/platform/errors"
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/tracing"
+	platformerrors "github.com/primandproper/platform-go/errors"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 // DeleteUser hard-deletes a user and all associated data via ON DELETE CASCADE.

@@ -7,9 +7,9 @@ import (
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
 	generated "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/uploadedmedia/generated"
 
-	"github.com/primandproper/platform/database"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/database"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 const (

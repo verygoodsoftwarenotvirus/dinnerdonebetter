@@ -5,7 +5,7 @@ import (
 	grpcconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/converters"
 	uploadedmediasvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/uploaded_media"
 
-	"github.com/primandproper/platform/identifiers"
+	"github.com/primandproper/platform-go/identifiers"
 )
 
 // ConvertMimeTypeToGRPCMimeType converts domain MIME type string to protobuf enum.

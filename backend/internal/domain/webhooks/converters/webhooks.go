@@ -3,7 +3,7 @@ package converters
 import (
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
 
-	"github.com/primandproper/platform/identifiers"
+	"github.com/primandproper/platform-go/identifiers"
 )
 
 // ConvertWebhookToWebhookCreationRequestInput builds a WebhookCreationRequestInput from a Webhook.

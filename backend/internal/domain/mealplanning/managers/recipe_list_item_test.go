@@ -8,8 +8,8 @@ import (
 	mealplanningmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/mocks"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	"github.com/primandproper/platform/database/filtering"
-	"github.com/primandproper/platform/reflection"
+	"github.com/primandproper/platform-go/database/filtering"
+	"github.com/primandproper/platform-go/reflection"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

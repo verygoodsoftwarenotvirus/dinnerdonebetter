@@ -16,11 +16,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/identity/generated"
 
-	"github.com/primandproper/platform/database"
-	databasecfg "github.com/primandproper/platform/database/config"
-	"github.com/primandproper/platform/database/filtering"
-	"github.com/primandproper/platform/identifiers"
-	"github.com/primandproper/platform/retry"
+	"github.com/primandproper/platform-go/database"
+	databasecfg "github.com/primandproper/platform-go/database/config"
+	"github.com/primandproper/platform-go/database/filtering"
+	"github.com/primandproper/platform-go/identifiers"
+	"github.com/primandproper/platform-go/retry"
 
 	_ "github.com/jackc/pgx/v5/stdlib"
 	"github.com/stretchr/testify/assert"

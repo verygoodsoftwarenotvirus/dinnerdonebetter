@@ -17,10 +17,10 @@ import (
 	identityrepo "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/identity"
 	notificationsrepo "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/notifications"
 
-	"github.com/primandproper/platform/database"
-	databasecfg "github.com/primandproper/platform/database/config"
-	"github.com/primandproper/platform/identifiers"
-	"github.com/primandproper/platform/random"
+	"github.com/primandproper/platform-go/database"
+	databasecfg "github.com/primandproper/platform-go/database/config"
+	"github.com/primandproper/platform-go/identifiers"
+	"github.com/primandproper/platform-go/random"
 )
 
 const (

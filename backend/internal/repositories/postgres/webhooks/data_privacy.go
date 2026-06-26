@@ -6,9 +6,9 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/webhooks/generated"
 
-	"github.com/primandproper/platform/database"
-	"github.com/primandproper/platform/database/filtering"
-	"github.com/primandproper/platform/observability"
+	"github.com/primandproper/platform-go/database"
+	"github.com/primandproper/platform-go/database/filtering"
+	"github.com/primandproper/platform-go/observability"
 )
 
 func (r *repository) CollectUserData(ctx context.Context, accountIDs []string) (*webhooks.UserDataCollection, error) {

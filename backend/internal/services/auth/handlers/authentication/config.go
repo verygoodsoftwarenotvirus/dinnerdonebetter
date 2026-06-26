@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	tokenscfg "github.com/primandproper/platform/authentication/tokens/config"
+	tokenscfg "github.com/primandproper/platform-go/authentication/tokens/config"
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )

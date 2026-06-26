@@ -13,11 +13,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/auth"
 	identitymanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/manager"
 
-	"github.com/primandproper/platform/authentication/tokens"
-	errorsgrpc "github.com/primandproper/platform/errors/grpc"
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/authentication/tokens"
+	errorsgrpc "github.com/primandproper/platform-go/errors/grpc"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
 
 	"github.com/go-oauth2/oauth2/v4/manage"
 	"google.golang.org/grpc"

@@ -6,11 +6,11 @@ import (
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
 	mealplanningkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/keys"
 
-	"github.com/primandproper/platform/database/filtering"
-	platformerrors "github.com/primandproper/platform/errors"
-	"github.com/primandproper/platform/identifiers"
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/database/filtering"
+	platformerrors "github.com/primandproper/platform-go/errors"
+	"github.com/primandproper/platform-go/identifiers"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 func (m *mealPlanningManager) AddMealToMealList(ctx context.Context, mealListID, mealID, notes string) (*types.MealListItem, error) {

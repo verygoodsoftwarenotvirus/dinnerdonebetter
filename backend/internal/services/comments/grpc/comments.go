@@ -9,10 +9,10 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/types"
 	converters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/comments/grpc/converters"
 
-	platformerrors "github.com/primandproper/platform/errors"
-	errorsgrpc "github.com/primandproper/platform/errors/grpc"
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/tracing"
+	platformerrors "github.com/primandproper/platform-go/errors"
+	errorsgrpc "github.com/primandproper/platform-go/errors/grpc"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/tracing"
 
 	"google.golang.org/grpc/codes"
 )

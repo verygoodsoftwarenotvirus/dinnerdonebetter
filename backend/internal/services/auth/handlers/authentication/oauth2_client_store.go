@@ -6,9 +6,9 @@ import (
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth"
 	oauthkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/keys"
 
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
 
 	"github.com/go-oauth2/oauth2/v4"
 )

@@ -7,7 +7,7 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/sessions"
 	identitymanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/manager"
 
-	httperrors "github.com/primandproper/platform/errors/http"
+	httperrors "github.com/primandproper/platform-go/errors/http"
 )
 
 func init() {

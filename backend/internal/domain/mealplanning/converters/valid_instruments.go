@@ -3,7 +3,7 @@ package converters
 import (
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
 
-	"github.com/primandproper/platform/identifiers"
+	"github.com/primandproper/platform-go/identifiers"
 )
 
 // ConvertValidInstrumentToValidInstrumentUpdateRequestInput creates a ValidInstrumentUpdateRequestInput from a ValidInstrument.

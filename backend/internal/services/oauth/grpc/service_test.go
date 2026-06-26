@@ -6,8 +6,8 @@ import (
 	managermock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/manager/mock"
 	oauthsvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/oauth"
 
-	loggingnoop "github.com/primandproper/platform/observability/logging/noop"
-	tracingnoop "github.com/primandproper/platform/observability/tracing/noop"
+	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
+	tracingnoop "github.com/primandproper/platform-go/observability/tracing/noop"
 
 	"github.com/stretchr/testify/assert"
 )

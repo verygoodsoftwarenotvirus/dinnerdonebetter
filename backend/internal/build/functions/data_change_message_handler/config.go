@@ -3,16 +3,16 @@ package datachangemessagehandler
 import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
 
-	analyticscfg "github.com/primandproper/platform/analytics/config"
-	databasecfg "github.com/primandproper/platform/database/config"
-	emailcfg "github.com/primandproper/platform/email/config"
-	"github.com/primandproper/platform/encoding"
-	httpclientcfg "github.com/primandproper/platform/httpclient"
-	msgconfig "github.com/primandproper/platform/messagequeue/config"
-	notificationscfg "github.com/primandproper/platform/notifications/mobile/config"
-	"github.com/primandproper/platform/observability"
-	textsearchcfg "github.com/primandproper/platform/search/text/config"
-	"github.com/primandproper/platform/uploads/objectstorage"
+	analyticscfg "github.com/primandproper/platform-go/analytics/config"
+	databasecfg "github.com/primandproper/platform-go/database/config"
+	emailcfg "github.com/primandproper/platform-go/email/config"
+	"github.com/primandproper/platform-go/encoding"
+	httpclientcfg "github.com/primandproper/platform-go/httpclient"
+	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
+	notificationscfg "github.com/primandproper/platform-go/notifications/mobile/config"
+	"github.com/primandproper/platform-go/observability"
+	textsearchcfg "github.com/primandproper/platform-go/search/text/config"
+	"github.com/primandproper/platform-go/uploads/objectstorage"
 
 	"github.com/samber/do/v2"
 )

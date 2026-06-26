@@ -10,11 +10,11 @@ import (
 
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config/envvars"
 
-	databasecfg "github.com/primandproper/platform/database/config"
-	"github.com/primandproper/platform/encoding"
-	msgconfig "github.com/primandproper/platform/messagequeue/config"
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/server/http"
+	databasecfg "github.com/primandproper/platform-go/database/config"
+	"github.com/primandproper/platform-go/encoding"
+	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/server/http"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

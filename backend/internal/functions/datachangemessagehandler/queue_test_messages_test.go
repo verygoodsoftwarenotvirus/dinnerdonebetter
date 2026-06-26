@@ -6,9 +6,9 @@ import (
 
 	internalopsmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/internalops/mock"
 
-	loggingnoop "github.com/primandproper/platform/observability/logging/noop"
-	"github.com/primandproper/platform/observability/tracing"
-	"github.com/primandproper/platform/reflection"
+	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
+	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/reflection"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

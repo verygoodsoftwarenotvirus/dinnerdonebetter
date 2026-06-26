@@ -8,10 +8,10 @@ import (
 	uploadedmediamock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia/mock"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	"github.com/primandproper/platform/database/filtering"
-	loggingnoop "github.com/primandproper/platform/observability/logging/noop"
-	tracingnoop "github.com/primandproper/platform/observability/tracing/noop"
-	"github.com/primandproper/platform/reflection"
+	"github.com/primandproper/platform-go/database/filtering"
+	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
+	tracingnoop "github.com/primandproper/platform-go/observability/tracing/noop"
+	"github.com/primandproper/platform-go/reflection"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

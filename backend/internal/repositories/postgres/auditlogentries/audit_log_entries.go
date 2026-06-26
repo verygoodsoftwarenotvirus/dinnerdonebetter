@@ -11,11 +11,11 @@ import (
 	identitykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/keys"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/auditlogentries/generated"
 
-	"github.com/primandproper/platform/database"
-	"github.com/primandproper/platform/database/filtering"
-	platformerrors "github.com/primandproper/platform/errors"
-	"github.com/primandproper/platform/observability"
-	"github.com/primandproper/platform/observability/tracing"
+	"github.com/primandproper/platform-go/database"
+	"github.com/primandproper/platform-go/database/filtering"
+	platformerrors "github.com/primandproper/platform-go/errors"
+	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/observability/tracing"
 )
 
 var (

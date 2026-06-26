@@ -8,9 +8,9 @@ import (
 	uploadedmediamanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia/manager"
 	identitysvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/identity"
 
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
-	"github.com/primandproper/platform/uploads"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/uploads"
 
 	"github.com/samber/do/v2"
 )

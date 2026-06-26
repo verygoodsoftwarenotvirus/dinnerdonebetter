@@ -7,13 +7,13 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/auth"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
 
-	"github.com/primandproper/platform/authentication/totp"
-	"github.com/primandproper/platform/messagequeue"
-	msgconfig "github.com/primandproper/platform/messagequeue/config"
-	"github.com/primandproper/platform/observability/logging"
-	"github.com/primandproper/platform/observability/tracing"
-	"github.com/primandproper/platform/qrcodes"
-	"github.com/primandproper/platform/random"
+	"github.com/primandproper/platform-go/authentication/totp"
+	"github.com/primandproper/platform-go/messagequeue"
+	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
+	"github.com/primandproper/platform-go/observability/logging"
+	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/qrcodes"
+	"github.com/primandproper/platform-go/random"
 
 	"github.com/samber/do/v2"
 )

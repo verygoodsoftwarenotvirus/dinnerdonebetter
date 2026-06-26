@@ -8,7 +8,7 @@ import (
 	mealplanningsvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/mealplanning"
 	uploadedmediaconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/uploadedmedia/grpc/converters"
 
-	"github.com/primandproper/platform/pointer"
+	"github.com/primandproper/platform-go/pointer"
 
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
