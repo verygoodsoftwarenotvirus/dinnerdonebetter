@@ -3,8 +3,8 @@ package grpc
 import (
 	"context"
 
-	identityconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/converters"
-	identitysvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/identity"
+	identityconverters "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/converters"
+	identitysvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/identity"
 
 	errorsgrpc "github.com/primandproper/platform-go/v2/errors/grpc"
 

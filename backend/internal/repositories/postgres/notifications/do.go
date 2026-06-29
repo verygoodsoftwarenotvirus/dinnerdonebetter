@@ -1,7 +1,7 @@
 package notifications
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
 
 	"github.com/primandproper/platform-go/v2/database"
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"

@@ -1,7 +1,7 @@
 package config
 
 import (
-	authcfg "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/config"
+	authcfg "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/config"
 
 	analyticscfg "github.com/primandproper/platform-go/v2/analytics/config"
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"

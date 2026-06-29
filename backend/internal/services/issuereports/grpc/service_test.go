@@ -3,9 +3,9 @@ package grpc
 import (
 	"testing"
 
-	commentsmanagermock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/comments/manager/mock"
-	issuereportmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports/mock"
-	issuereportssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/issue_reports"
+	commentsmanagermock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/comments/manager/mock"
+	issuereportmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/issuereports/mock"
+	issuereportssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/issue_reports"
 
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
 	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"

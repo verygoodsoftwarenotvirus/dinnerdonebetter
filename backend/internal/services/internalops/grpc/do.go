@@ -1,8 +1,8 @@
 package grpc
 
 import (
-	domaininternalops "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/internalops"
-	settingssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/internalops"
+	domaininternalops "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/internalops"
+	settingssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/internalops"
 
 	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"
 	"github.com/primandproper/platform-go/v2/observability/logging"

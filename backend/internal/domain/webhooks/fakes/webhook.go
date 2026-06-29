@@ -3,8 +3,8 @@ package fakes
 import (
 	"net/http"
 
-	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks/converters"
+	types "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks/converters"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 

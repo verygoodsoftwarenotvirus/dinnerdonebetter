@@ -1,7 +1,7 @@
 package grpc
 
 import (
-	analyticspb "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/analytics"
+	analyticspb "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/analytics"
 
 	"github.com/primandproper/platform-go/v2/analytics/multisource"
 	"github.com/primandproper/platform-go/v2/observability/logging"

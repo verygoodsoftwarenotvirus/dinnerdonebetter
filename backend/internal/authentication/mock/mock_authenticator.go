@@ -3,7 +3,7 @@ package mockauthn
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication"
 
 	"github.com/stretchr/testify/mock"
 )

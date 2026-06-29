@@ -5,7 +5,7 @@ import (
 	"encoding/gob"
 	"net/http"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authorization"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authorization"
 
 	platformerrors "github.com/primandproper/platform-go/v2/errors"
 	platformkeys "github.com/primandproper/platform-go/v2/observability/keys"

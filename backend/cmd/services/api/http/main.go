@@ -8,8 +8,8 @@ import (
 	"syscall"
 	"time"
 
-	api "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/build/services/api/http"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
+	api "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/build/services/api/http"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
 
 	_ "go.uber.org/automaxprocs"
 )

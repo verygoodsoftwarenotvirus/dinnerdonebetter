@@ -3,7 +3,7 @@ package grocerylistpreparation
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning"
 
 	"github.com/stretchr/testify/mock"
 )

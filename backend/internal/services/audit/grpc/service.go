@@ -3,12 +3,12 @@ package grpc
 import (
 	"context"
 
-	auditkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit/keys"
-	auditmanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit/manager"
-	grpcconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/converters"
-	auditsvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/audit"
-	grpctypes "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/types"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/audit/grpc/converters"
+	auditkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit/keys"
+	auditmanager "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit/manager"
+	grpcconverters "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/converters"
+	auditsvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/audit"
+	grpctypes "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/types"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/audit/grpc/converters"
 
 	errorsgrpc "github.com/primandproper/platform-go/v2/errors/grpc"
 	"github.com/primandproper/platform-go/v2/observability/logging"

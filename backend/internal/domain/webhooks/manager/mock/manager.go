@@ -3,8 +3,8 @@ package mock
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks/manager"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks/manager"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 

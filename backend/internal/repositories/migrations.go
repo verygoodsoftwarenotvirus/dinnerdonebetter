@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	postgresmigrations "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/migrations"
+	postgresmigrations "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/migrations"
 
 	"github.com/primandproper/platform-go/v2/database"
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"

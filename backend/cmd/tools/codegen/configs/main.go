@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
 
 	"github.com/primandproper/platform-go/v2/encoding"
 )

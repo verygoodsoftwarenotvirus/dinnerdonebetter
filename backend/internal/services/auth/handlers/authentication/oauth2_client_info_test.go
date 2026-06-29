@@ -3,7 +3,7 @@ package authentication
 import (
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/fakes"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth/fakes"
 
 	"github.com/stretchr/testify/assert"
 )

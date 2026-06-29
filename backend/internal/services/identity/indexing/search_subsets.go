@@ -1,7 +1,7 @@
 package indexing
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
 
 	textsearch "github.com/primandproper/platform-go/v2/search/text"
 )

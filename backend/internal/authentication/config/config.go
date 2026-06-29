@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	webauthncfg "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/webauthn/config"
+	webauthncfg "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/webauthn/config"
 
 	tokenscfg "github.com/primandproper/platform-go/v2/authentication/tokens/config"
 

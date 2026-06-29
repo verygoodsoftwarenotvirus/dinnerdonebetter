@@ -1,7 +1,7 @@
 package searchdataindexscheduler
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
 
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"
 	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"

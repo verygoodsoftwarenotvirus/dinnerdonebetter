@@ -4,12 +4,12 @@ import (
 	"context"
 	"testing"
 
-	authenticationmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/sessions"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authorization"
-	authmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/auth/mock"
-	identitymanagermock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/manager/mock"
-	authsvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/auth"
+	authenticationmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/sessions"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authorization"
+	authmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/auth/mock"
+	identitymanagermock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/manager/mock"
+	authsvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/auth"
 
 	"github.com/primandproper/platform-go/v2/encoding"
 	"github.com/primandproper/platform-go/v2/featureflags"

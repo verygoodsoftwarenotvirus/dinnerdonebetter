@@ -3,7 +3,7 @@ package audit
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/sessions"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/sessions"
 
 	"github.com/primandproper/platform-go/v2/observability/logging"
 )

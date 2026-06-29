@@ -4,7 +4,7 @@ import (
 	"context"
 	"strings"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/payments"
 
 	"github.com/primandproper/platform-go/v2/encoding"
 	"github.com/primandproper/platform-go/v2/observability"

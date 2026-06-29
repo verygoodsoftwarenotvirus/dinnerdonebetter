@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config/envvars"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config/envvars"
 
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"
 	"github.com/primandproper/platform-go/v2/encoding"
