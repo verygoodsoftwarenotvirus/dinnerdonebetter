@@ -9,24 +9,6 @@ import (
 	"time"
 )
 
-type Oauth2ClientTokens struct {
-	ID                  string
-	ClientID            string
-	BelongsToUser       string
-	RedirectUri         string
-	Code                string
-	CodeChallenge       string
-	CodeChallengeMethod string
-	CodeCreatedAt       time.Time
-	CodeExpiresAt       time.Time
-	Access              string
-	AccessCreatedAt     time.Time
-	AccessExpiresAt     time.Time
-	Refresh             string
-	RefreshCreatedAt    time.Time
-	RefreshExpiresAt    time.Time
-}
-
 type Oauth2Clients struct {
 	ID           string
 	Name         string

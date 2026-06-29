@@ -12,12 +12,12 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/payments/adapters"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	"github.com/primandproper/platform-go/messagequeue"
-	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
-	mockpublishers "github.com/primandproper/platform-go/messagequeue/mock"
-	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
-	tracingnoop "github.com/primandproper/platform-go/observability/tracing/noop"
-	"github.com/primandproper/platform-go/reflection"
+	"github.com/primandproper/platform-go/v2/messagequeue"
+	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"
+	mockpublishers "github.com/primandproper/platform-go/v2/messagequeue/mock"
+	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
+	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"
+	"github.com/primandproper/platform-go/v2/reflection"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

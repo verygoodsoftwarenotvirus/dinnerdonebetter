@@ -13,6 +13,9 @@ const (
 	codeColumn                  = "code"
 	accessColumn                = "access"
 	refreshColumn               = "refresh"
+	codeHashColumn              = "code_hash"
+	accessHashColumn            = "access_hash"
+	refreshHashColumn           = "refresh_hash"
 	codeExpiresAtColumn         = "code_expires_at"
 	accessExpiresAtColumn       = "access_expires_at"
 	refreshExpiresAtColumn      = "refresh_expires_at"
@@ -41,6 +44,15 @@ var oauth2ClientTokensColumns = []string{
 	refreshExpiresAtColumn,
 }
 
+/* #nosec G101 */
+// oauth2ClientTokensInsertColumns extends the readable columns with the blind-index hashes,
+// which are written on insert but never selected back.
+var oauth2ClientTokensInsertColumns = append(append([]string{}, oauth2ClientTokensColumns...),
+	codeHashColumn,
+	accessHashColumn,
+	refreshHashColumn,
+)
+
 func buildOAuth2ClientTokensQueries(database string) []*Query {
 	switch database {
 	case postgres:
@@ -51,21 +63,21 @@ func buildOAuth2ClientTokensQueries(database string) []*Query {
 					Name: "DeleteOAuth2ClientTokenByAccess",
 					Type: ExecRowsType,
 				},
-				Content: buildRawQuery((&builq.Builder{}).Addf(`DELETE FROM %s WHERE %s = sqlc.arg(%s);`, oauth2ClientTokensTableName, accessColumn, accessColumn)),
+				Content: buildRawQuery((&builq.Builder{}).Addf(`DELETE FROM %s WHERE %s = sqlc.arg(%s);`, oauth2ClientTokensTableName, accessHashColumn, accessHashColumn)),
 			},
 			{
 				Annotation: QueryAnnotation{
 					Name: "DeleteOAuth2ClientTokenByCode",
 					Type: ExecRowsType,
 				},
-				Content: buildRawQuery((&builq.Builder{}).Addf(`DELETE FROM %s WHERE %s = sqlc.arg(%s);`, oauth2ClientTokensTableName, codeColumn, codeColumn)),
+				Content: buildRawQuery((&builq.Builder{}).Addf(`DELETE FROM %s WHERE %s = sqlc.arg(%s);`, oauth2ClientTokensTableName, codeHashColumn, codeHashColumn)),
 			},
 			{
 				Annotation: QueryAnnotation{
 					Name: "DeleteOAuth2ClientTokenByRefresh",
 					Type: ExecRowsType,
 				},
-				Content: buildRawQuery((&builq.Builder{}).Addf(`DELETE FROM %s WHERE %s = sqlc.arg(%s);`, oauth2ClientTokensTableName, refreshColumn, refreshColumn)),
+				Content: buildRawQuery((&builq.Builder{}).Addf(`DELETE FROM %s WHERE %s = sqlc.arg(%s);`, oauth2ClientTokensTableName, refreshHashColumn, refreshHashColumn)),
 			},
 			{
 				Annotation: QueryAnnotation{
@@ -78,8 +90,8 @@ func buildOAuth2ClientTokensQueries(database string) []*Query {
 	%s
 );`,
 					oauth2ClientTokensTableName,
-					strings.Join(oauth2ClientTokensColumns, ",\n\t"),
-					strings.Join(applyToEach(oauth2ClientTokensColumns, func(i int, s string) string {
+					strings.Join(oauth2ClientTokensInsertColumns, ",\n\t"),
+					strings.Join(applyToEach(oauth2ClientTokensInsertColumns, func(i int, s string) string {
 						return fmt.Sprintf("sqlc.arg(%s)", s)
 					}), ",\n\t"),
 				)),
@@ -114,7 +126,7 @@ WHERE %s.%s = sqlc.arg(%s);`,
 						return fmt.Sprintf("%s.%s", oauth2ClientTokensTableName, s)
 					}), ",\n\t"),
 					oauth2ClientTokensTableName,
-					oauth2ClientTokensTableName, accessColumn, accessColumn,
+					oauth2ClientTokensTableName, accessHashColumn, accessHashColumn,
 				)),
 			},
 			{
@@ -130,7 +142,7 @@ WHERE %s.%s = sqlc.arg(%s);`,
 						return fmt.Sprintf("%s.%s", oauth2ClientTokensTableName, s)
 					}), ",\n\t"),
 					oauth2ClientTokensTableName,
-					oauth2ClientTokensTableName, codeColumn, codeColumn,
+					oauth2ClientTokensTableName, codeHashColumn, codeHashColumn,
 				)),
 			},
 			{
@@ -146,7 +158,7 @@ WHERE %s.%s = sqlc.arg(%s);`,
 						return fmt.Sprintf("%s.%s", oauth2ClientTokensTableName, s)
 					}), ",\n\t"),
 					oauth2ClientTokensTableName,
-					oauth2ClientTokensTableName, refreshColumn, refreshColumn,
+					oauth2ClientTokensTableName, refreshHashColumn, refreshHashColumn,
 				)),
 			},
 		}

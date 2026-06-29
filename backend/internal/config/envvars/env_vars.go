@@ -154,9 +154,6 @@ const (
 	// DatabaseRunMigrationsEnvVarKey is the environment variable name to set to override `APIServiceConfig.Database.RunMigrations`.
 	DatabaseRunMigrationsEnvVarKey = "DINNER_DONE_BETTER_DATABASE_RUN_MIGRATIONS"
 
-	// DatabaseUserDeviceTokenEncryptionKeyEnvVarKey is the environment variable name to set to override `APIServiceConfig.Database.UserDeviceTokenEncryptionKey`.
-	DatabaseUserDeviceTokenEncryptionKeyEnvVarKey = "DINNER_DONE_BETTER_DATABASE_USER_DEVICE_TOKEN_ENCRYPTION_KEY"
-
 	// DatabaseWriteConnectionDatabaseEnvVarKey is the environment variable name to set to override `APIServiceConfig.Database.WriteConnection.Database`.
 	DatabaseWriteConnectionDatabaseEnvVarKey = "DINNER_DONE_BETTER_DATABASE_WRITE_CONNECTION_DATABASE"
 

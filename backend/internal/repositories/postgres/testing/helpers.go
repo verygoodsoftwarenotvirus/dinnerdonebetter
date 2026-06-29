@@ -16,11 +16,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/identity/generated"
 
-	"github.com/primandproper/platform-go/database"
-	databasecfg "github.com/primandproper/platform-go/database/config"
-	"github.com/primandproper/platform-go/database/filtering"
-	"github.com/primandproper/platform-go/identifiers"
-	"github.com/primandproper/platform-go/retry"
+	"github.com/primandproper/platform-go/v2/database"
+	databasecfg "github.com/primandproper/platform-go/v2/database/config"
+	"github.com/primandproper/platform-go/v2/database/filtering"
+	"github.com/primandproper/platform-go/v2/identifiers"
+	"github.com/primandproper/platform-go/v2/retry"
 
 	_ "github.com/jackc/pgx/v5/stdlib"
 	"github.com/stretchr/testify/assert"
@@ -156,9 +156,8 @@ func BuildDatabaseContainer(ctx context.Context, dbName string) (*postgres.Postg
 	}
 
 	dbConfig := &databasecfg.Config{
-		RunMigrations:                false,
-		OAuth2TokenEncryptionKey:     "blahblahblahblahblahblahblahblah",
-		UserDeviceTokenEncryptionKey: "blahblahblahblahblahblahblahblah",
+		RunMigrations:            false,
+		OAuth2TokenEncryptionKey: "blahblahblahblahblahblahblahblah",
 	}
 	if err = dbConfig.LoadConnectionDetailsFromURL(connStr); err != nil {
 		return nil, nil, nil, fmt.Errorf("failed to connect to postgres container: %w", err)

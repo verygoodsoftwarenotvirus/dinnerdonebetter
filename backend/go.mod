@@ -36,7 +36,7 @@ require (
 	github.com/matcornic/hermes/v2 v2.1.0
 	github.com/modelcontextprotocol/go-sdk v1.4.0
 	github.com/pquerna/otp v1.5.0
-	github.com/primandproper/platform-go v1.0.0
+	github.com/primandproper/platform-go/v2 v2.0.1
 	github.com/samber/do/v2 v2.0.0
 	github.com/shopspring/decimal v1.4.0
 	github.com/spf13/cobra v1.10.2

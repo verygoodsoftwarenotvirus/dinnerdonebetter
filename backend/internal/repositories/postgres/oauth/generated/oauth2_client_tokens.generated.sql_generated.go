@@ -42,7 +42,10 @@ INSERT INTO oauth2_client_tokens (
 	access_expires_at,
 	refresh,
 	refresh_created_at,
-	refresh_expires_at
+	refresh_expires_at,
+	code_hash,
+	access_hash,
+	refresh_hash
 ) VALUES (
 	$1,
 	$2,
@@ -58,7 +61,10 @@ INSERT INTO oauth2_client_tokens (
 	$12,
 	$13,
 	$14,
-	$15
+	$15,
+	$16,
+	$17,
+	$18
 )
 `
 
@@ -78,6 +84,9 @@ type CreateOAuth2ClientTokenParams struct {
 	Refresh             string
 	RefreshCreatedAt    time.Time
 	RefreshExpiresAt    time.Time
+	CodeHash            string
+	AccessHash          string
+	RefreshHash         string
 }
 
 func (q *Queries) CreateOAuth2ClientToken(ctx context.Context, db DBTX, arg *CreateOAuth2ClientTokenParams) error {
@@ -97,16 +106,19 @@ func (q *Queries) CreateOAuth2ClientToken(ctx context.Context, db DBTX, arg *Cre
 		arg.Refresh,
 		arg.RefreshCreatedAt,
 		arg.RefreshExpiresAt,
+		arg.CodeHash,
+		arg.AccessHash,
+		arg.RefreshHash,
 	)
 	return err
 }
 
 const deleteOAuth2ClientTokenByAccess = `-- name: DeleteOAuth2ClientTokenByAccess :execrows
-DELETE FROM oauth2_client_tokens WHERE access = $1
+DELETE FROM oauth2_client_tokens WHERE access_hash = $1
 `
 
-func (q *Queries) DeleteOAuth2ClientTokenByAccess(ctx context.Context, db DBTX, access string) (int64, error) {
-	result, err := db.ExecContext(ctx, deleteOAuth2ClientTokenByAccess, access)
+func (q *Queries) DeleteOAuth2ClientTokenByAccess(ctx context.Context, db DBTX, accessHash string) (int64, error) {
+	result, err := db.ExecContext(ctx, deleteOAuth2ClientTokenByAccess, accessHash)
 	if err != nil {
 		return 0, err
 	}
@@ -114,11 +126,11 @@ func (q *Queries) DeleteOAuth2ClientTokenByAccess(ctx context.Context, db DBTX, 
 }
 
 const deleteOAuth2ClientTokenByCode = `-- name: DeleteOAuth2ClientTokenByCode :execrows
-DELETE FROM oauth2_client_tokens WHERE code = $1
+DELETE FROM oauth2_client_tokens WHERE code_hash = $1
 `
 
-func (q *Queries) DeleteOAuth2ClientTokenByCode(ctx context.Context, db DBTX, code string) (int64, error) {
-	result, err := db.ExecContext(ctx, deleteOAuth2ClientTokenByCode, code)
+func (q *Queries) DeleteOAuth2ClientTokenByCode(ctx context.Context, db DBTX, codeHash string) (int64, error) {
+	result, err := db.ExecContext(ctx, deleteOAuth2ClientTokenByCode, codeHash)
 	if err != nil {
 		return 0, err
 	}
@@ -126,11 +138,11 @@ func (q *Queries) DeleteOAuth2ClientTokenByCode(ctx context.Context, db DBTX, co
 }
 
 const deleteOAuth2ClientTokenByRefresh = `-- name: DeleteOAuth2ClientTokenByRefresh :execrows
-DELETE FROM oauth2_client_tokens WHERE refresh = $1
+DELETE FROM oauth2_client_tokens WHERE refresh_hash = $1
 `
 
-func (q *Queries) DeleteOAuth2ClientTokenByRefresh(ctx context.Context, db DBTX, refresh string) (int64, error) {
-	result, err := db.ExecContext(ctx, deleteOAuth2ClientTokenByRefresh, refresh)
+func (q *Queries) DeleteOAuth2ClientTokenByRefresh(ctx context.Context, db DBTX, refreshHash string) (int64, error) {
+	result, err := db.ExecContext(ctx, deleteOAuth2ClientTokenByRefresh, refreshHash)
 	if err != nil {
 		return 0, err
 	}
@@ -155,12 +167,30 @@ SELECT
 	oauth2_client_tokens.refresh_created_at,
 	oauth2_client_tokens.refresh_expires_at
 FROM oauth2_client_tokens
-WHERE oauth2_client_tokens.access = $1
+WHERE oauth2_client_tokens.access_hash = $1
 `
 
-func (q *Queries) GetOAuth2ClientTokenByAccess(ctx context.Context, db DBTX, access string) (*Oauth2ClientTokens, error) {
-	row := db.QueryRowContext(ctx, getOAuth2ClientTokenByAccess, access)
-	var i Oauth2ClientTokens
+type GetOAuth2ClientTokenByAccessRow struct {
+	ID                  string
+	ClientID            string
+	BelongsToUser       string
+	RedirectUri         string
+	Code                string
+	CodeChallenge       string
+	CodeChallengeMethod string
+	CodeCreatedAt       time.Time
+	CodeExpiresAt       time.Time
+	Access              string
+	AccessCreatedAt     time.Time
+	AccessExpiresAt     time.Time
+	Refresh             string
+	RefreshCreatedAt    time.Time
+	RefreshExpiresAt    time.Time
+}
+
+func (q *Queries) GetOAuth2ClientTokenByAccess(ctx context.Context, db DBTX, accessHash string) (*GetOAuth2ClientTokenByAccessRow, error) {
+	row := db.QueryRowContext(ctx, getOAuth2ClientTokenByAccess, accessHash)
+	var i GetOAuth2ClientTokenByAccessRow
 	err := row.Scan(
 		&i.ID,
 		&i.ClientID,
@@ -199,12 +229,30 @@ SELECT
 	oauth2_client_tokens.refresh_created_at,
 	oauth2_client_tokens.refresh_expires_at
 FROM oauth2_client_tokens
-WHERE oauth2_client_tokens.code = $1
+WHERE oauth2_client_tokens.code_hash = $1
 `
 
-func (q *Queries) GetOAuth2ClientTokenByCode(ctx context.Context, db DBTX, code string) (*Oauth2ClientTokens, error) {
-	row := db.QueryRowContext(ctx, getOAuth2ClientTokenByCode, code)
-	var i Oauth2ClientTokens
+type GetOAuth2ClientTokenByCodeRow struct {
+	ID                  string
+	ClientID            string
+	BelongsToUser       string
+	RedirectUri         string
+	Code                string
+	CodeChallenge       string
+	CodeChallengeMethod string
+	CodeCreatedAt       time.Time
+	CodeExpiresAt       time.Time
+	Access              string
+	AccessCreatedAt     time.Time
+	AccessExpiresAt     time.Time
+	Refresh             string
+	RefreshCreatedAt    time.Time
+	RefreshExpiresAt    time.Time
+}
+
+func (q *Queries) GetOAuth2ClientTokenByCode(ctx context.Context, db DBTX, codeHash string) (*GetOAuth2ClientTokenByCodeRow, error) {
+	row := db.QueryRowContext(ctx, getOAuth2ClientTokenByCode, codeHash)
+	var i GetOAuth2ClientTokenByCodeRow
 	err := row.Scan(
 		&i.ID,
 		&i.ClientID,
@@ -243,12 +291,30 @@ SELECT
 	oauth2_client_tokens.refresh_created_at,
 	oauth2_client_tokens.refresh_expires_at
 FROM oauth2_client_tokens
-WHERE oauth2_client_tokens.refresh = $1
+WHERE oauth2_client_tokens.refresh_hash = $1
 `
 
-func (q *Queries) GetOAuth2ClientTokenByRefresh(ctx context.Context, db DBTX, refresh string) (*Oauth2ClientTokens, error) {
-	row := db.QueryRowContext(ctx, getOAuth2ClientTokenByRefresh, refresh)
-	var i Oauth2ClientTokens
+type GetOAuth2ClientTokenByRefreshRow struct {
+	ID                  string
+	ClientID            string
+	BelongsToUser       string
+	RedirectUri         string
+	Code                string
+	CodeChallenge       string
+	CodeChallengeMethod string
+	CodeCreatedAt       time.Time
+	CodeExpiresAt       time.Time
+	Access              string
+	AccessCreatedAt     time.Time
+	AccessExpiresAt     time.Time
+	Refresh             string
+	RefreshCreatedAt    time.Time
+	RefreshExpiresAt    time.Time
+}
+
+func (q *Queries) GetOAuth2ClientTokenByRefresh(ctx context.Context, db DBTX, refreshHash string) (*GetOAuth2ClientTokenByRefreshRow, error) {
+	row := db.QueryRowContext(ctx, getOAuth2ClientTokenByRefresh, refreshHash)
+	var i GetOAuth2ClientTokenByRefreshRow
 	err := row.Scan(
 		&i.ID,
 		&i.ClientID,

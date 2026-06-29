@@ -11,11 +11,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
 	dataprivacysvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/dataprivacy"
 
-	"github.com/primandproper/platform-go/identifiers"
-	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
-	"github.com/primandproper/platform-go/observability/tracing"
-	tracingnoop "github.com/primandproper/platform-go/observability/tracing/noop"
-	mockuploads "github.com/primandproper/platform-go/uploads/mock"
+	"github.com/primandproper/platform-go/v2/identifiers"
+	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
+	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"
+	mockuploads "github.com/primandproper/platform-go/v2/uploads/mock"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

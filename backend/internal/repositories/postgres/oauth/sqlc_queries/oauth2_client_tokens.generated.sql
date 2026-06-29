@@ -1,11 +1,11 @@
 -- name: DeleteOAuth2ClientTokenByAccess :execrows
-DELETE FROM oauth2_client_tokens WHERE access = sqlc.arg(access);
+DELETE FROM oauth2_client_tokens WHERE access_hash = sqlc.arg(access_hash);
 
 -- name: DeleteOAuth2ClientTokenByCode :execrows
-DELETE FROM oauth2_client_tokens WHERE code = sqlc.arg(code);
+DELETE FROM oauth2_client_tokens WHERE code_hash = sqlc.arg(code_hash);
 
 -- name: DeleteOAuth2ClientTokenByRefresh :execrows
-DELETE FROM oauth2_client_tokens WHERE refresh = sqlc.arg(refresh);
+DELETE FROM oauth2_client_tokens WHERE refresh_hash = sqlc.arg(refresh_hash);
 
 -- name: CreateOAuth2ClientToken :exec
 INSERT INTO oauth2_client_tokens (
@@ -23,7 +23,10 @@ INSERT INTO oauth2_client_tokens (
 	access_expires_at,
 	refresh,
 	refresh_created_at,
-	refresh_expires_at
+	refresh_expires_at,
+	code_hash,
+	access_hash,
+	refresh_hash
 ) VALUES (
 	sqlc.arg(id),
 	sqlc.arg(client_id),
@@ -39,7 +42,10 @@ INSERT INTO oauth2_client_tokens (
 	sqlc.arg(access_expires_at),
 	sqlc.arg(refresh),
 	sqlc.arg(refresh_created_at),
-	sqlc.arg(refresh_expires_at)
+	sqlc.arg(refresh_expires_at),
+	sqlc.arg(code_hash),
+	sqlc.arg(access_hash),
+	sqlc.arg(refresh_hash)
 );
 
 -- name: CheckOAuth2ClientTokenExistence :one
@@ -68,7 +74,7 @@ SELECT
 	oauth2_client_tokens.refresh_created_at,
 	oauth2_client_tokens.refresh_expires_at
 FROM oauth2_client_tokens
-WHERE oauth2_client_tokens.access = sqlc.arg(access);
+WHERE oauth2_client_tokens.access_hash = sqlc.arg(access_hash);
 
 -- name: GetOAuth2ClientTokenByCode :one
 SELECT
@@ -88,7 +94,7 @@ SELECT
 	oauth2_client_tokens.refresh_created_at,
 	oauth2_client_tokens.refresh_expires_at
 FROM oauth2_client_tokens
-WHERE oauth2_client_tokens.code = sqlc.arg(code);
+WHERE oauth2_client_tokens.code_hash = sqlc.arg(code_hash);
 
 -- name: GetOAuth2ClientTokenByRefresh :one
 SELECT
@@ -108,4 +114,4 @@ SELECT
 	oauth2_client_tokens.refresh_created_at,
 	oauth2_client_tokens.refresh_expires_at
 FROM oauth2_client_tokens
-WHERE oauth2_client_tokens.refresh = sqlc.arg(refresh);
+WHERE oauth2_client_tokens.refresh_hash = sqlc.arg(refresh_hash);

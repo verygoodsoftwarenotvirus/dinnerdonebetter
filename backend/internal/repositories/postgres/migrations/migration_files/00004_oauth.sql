@@ -29,6 +29,12 @@ CREATE TABLE IF NOT EXISTS oauth2_client_tokens (
     refresh TEXT DEFAULT ''::TEXT NOT NULL,
     refresh_created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
     refresh_expires_at TIMESTAMP WITH TIME ZONE DEFAULT (NOW() + '01:00:00'::INTERVAL) NOT NULL,
+    -- Deterministic blind indexes over the plaintext code/access/refresh values.
+    -- The code/access/refresh columns themselves are stored encrypted (randomized nonce),
+    -- so lookups happen against these HMAC hashes instead.
+    code_hash TEXT DEFAULT ''::TEXT NOT NULL,
+    access_hash TEXT DEFAULT ''::TEXT NOT NULL,
+    refresh_hash TEXT DEFAULT ''::TEXT NOT NULL,
     UNIQUE(belongs_to_user, client_id, code_expires_at, access_expires_at, refresh_expires_at)
 );
 
@@ -46,3 +52,6 @@ CREATE INDEX idx_oauth2_tokens_user_client ON oauth2_client_tokens (belongs_to_u
 CREATE INDEX idx_oauth2_tokens_code_expires ON oauth2_client_tokens (code_expires_at);
 CREATE INDEX idx_oauth2_tokens_access_expires ON oauth2_client_tokens (access_expires_at);
 CREATE INDEX idx_oauth2_tokens_refresh_expires ON oauth2_client_tokens (refresh_expires_at);
+CREATE INDEX idx_oauth2_tokens_code_hash ON oauth2_client_tokens (code_hash);
+CREATE INDEX idx_oauth2_tokens_access_hash ON oauth2_client_tokens (access_hash);
+CREATE INDEX idx_oauth2_tokens_refresh_hash ON oauth2_client_tokens (refresh_hash);

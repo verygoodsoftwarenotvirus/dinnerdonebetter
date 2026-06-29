@@ -11,27 +11,27 @@ import (
 	uploadedmediacfg "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/uploadedmedia/config"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	analyticscfg "github.com/primandproper/platform-go/analytics/config"
-	tokenscfg "github.com/primandproper/platform-go/authentication/tokens/config"
-	circuitbreakingcfg "github.com/primandproper/platform-go/circuitbreaking/config"
-	encryptioncfg "github.com/primandproper/platform-go/cryptography/encryption/config"
-	databasecfg "github.com/primandproper/platform-go/database/config"
-	"github.com/primandproper/platform-go/encoding"
-	featureflagscfg "github.com/primandproper/platform-go/featureflags/config"
-	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
-	"github.com/primandproper/platform-go/messagequeue/redis"
-	notificationscfg "github.com/primandproper/platform-go/notifications/mobile/config"
-	"github.com/primandproper/platform-go/observability"
-	"github.com/primandproper/platform-go/observability/logging"
-	loggingcfg "github.com/primandproper/platform-go/observability/logging/config"
-	tracingcfg "github.com/primandproper/platform-go/observability/tracing/config"
-	"github.com/primandproper/platform-go/routing/chi"
-	routingcfg "github.com/primandproper/platform-go/routing/config"
-	textsearchcfg "github.com/primandproper/platform-go/search/text/config"
-	"github.com/primandproper/platform-go/server/grpc"
-	"github.com/primandproper/platform-go/server/http"
-	uploadscfg "github.com/primandproper/platform-go/uploads/config"
-	"github.com/primandproper/platform-go/uploads/objectstorage"
+	analyticscfg "github.com/primandproper/platform-go/v2/analytics/config"
+	tokenscfg "github.com/primandproper/platform-go/v2/authentication/tokens/config"
+	circuitbreakingcfg "github.com/primandproper/platform-go/v2/circuitbreaking/config"
+	encryptioncfg "github.com/primandproper/platform-go/v2/cryptography/encryption/config"
+	databasecfg "github.com/primandproper/platform-go/v2/database/config"
+	"github.com/primandproper/platform-go/v2/encoding"
+	featureflagscfg "github.com/primandproper/platform-go/v2/featureflags/config"
+	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"
+	"github.com/primandproper/platform-go/v2/messagequeue/redis"
+	notificationscfg "github.com/primandproper/platform-go/v2/notifications/mobile/config"
+	"github.com/primandproper/platform-go/v2/observability"
+	"github.com/primandproper/platform-go/v2/observability/logging"
+	loggingcfg "github.com/primandproper/platform-go/v2/observability/logging/config"
+	tracingcfg "github.com/primandproper/platform-go/v2/observability/tracing/config"
+	"github.com/primandproper/platform-go/v2/routing/chi"
+	routingcfg "github.com/primandproper/platform-go/v2/routing/config"
+	textsearchcfg "github.com/primandproper/platform-go/v2/search/text/config"
+	"github.com/primandproper/platform-go/v2/server/grpc"
+	"github.com/primandproper/platform-go/v2/server/http"
+	uploadscfg "github.com/primandproper/platform-go/v2/uploads/config"
+	"github.com/primandproper/platform-go/v2/uploads/objectstorage"
 )
 
 func buildIntegrationTestsConfig() *config.APIServiceConfig {
@@ -91,20 +91,19 @@ func buildIntegrationTestsConfig() *config.APIServiceConfig {
 			Port: defaultGRPCPort,
 		},
 		Database: databasecfg.Config{
-			Provider:                     databasecfg.ProviderPostgres,
-			Encryption:                   encryptioncfg.Config{Provider: encryptioncfg.ProviderSalsa20},
-			OAuth2TokenEncryptionKey:     localOAuth2TokenEncryptionKey,
-			UserDeviceTokenEncryptionKey: localOAuth2TokenEncryptionKey,
-			Debug:                        true,
-			RunMigrations:                true,
-			LogQueries:                   true,
-			MaxPingAttempts:              maxAttempts,
-			PingWaitPeriod:               1500 * time.Millisecond,
-			MaxIdleConns:                 5,
-			MaxOpenConns:                 7,
-			ConnMaxLifetime:              30 * time.Minute,
-			ReadConnection:               localdevPostgresDBConnectionDetails,
-			WriteConnection:              localdevPostgresDBConnectionDetails,
+			Provider:                 databasecfg.ProviderPostgres,
+			Encryption:               encryptioncfg.Config{Provider: encryptioncfg.ProviderSalsa20},
+			OAuth2TokenEncryptionKey: localOAuth2TokenEncryptionKey,
+			Debug:                    true,
+			RunMigrations:            true,
+			LogQueries:               true,
+			MaxPingAttempts:          maxAttempts,
+			PingWaitPeriod:           1500 * time.Millisecond,
+			MaxIdleConns:             5,
+			MaxOpenConns:             7,
+			ConnMaxLifetime:          30 * time.Minute,
+			ReadConnection:           localdevPostgresDBConnectionDetails,
+			WriteConnection:          localdevPostgresDBConnectionDetails,
 		},
 		Observability: observability.Config{
 			Logging: loggingcfg.Config{

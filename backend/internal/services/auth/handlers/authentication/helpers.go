@@ -9,8 +9,8 @@ import (
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
 	identitykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/keys"
 
-	"github.com/primandproper/platform-go/authentication/totp"
-	"github.com/primandproper/platform-go/observability"
+	"github.com/primandproper/platform-go/v2/authentication/totp"
+	"github.com/primandproper/platform-go/v2/observability"
 )
 
 // validateLogin takes login information and returns whether the login is valid.

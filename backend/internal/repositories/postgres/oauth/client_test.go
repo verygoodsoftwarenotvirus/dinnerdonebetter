@@ -10,11 +10,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/migrations"
 	pgtesting "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/testing"
 
-	databasecfg "github.com/primandproper/platform-go/database/config"
-	mockdatabase "github.com/primandproper/platform-go/database/mock"
-	"github.com/primandproper/platform-go/database/postgres"
-	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
-	tracingnoop "github.com/primandproper/platform-go/observability/tracing/noop"
+	databasecfg "github.com/primandproper/platform-go/v2/database/config"
+	mockdatabase "github.com/primandproper/platform-go/v2/database/mock"
+	"github.com/primandproper/platform-go/v2/database/postgres"
+	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
+	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"
 
 	"github.com/stretchr/testify/require"
 	pgcontainers "github.com/testcontainers/testcontainers-go/modules/postgres"
