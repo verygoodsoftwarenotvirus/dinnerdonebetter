@@ -1,8 +1,8 @@
 package queuetest
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
-	queuetest "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/internalops/workers/queue_test"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
+	queuetest "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/internalops/workers/queue_test"
 
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"
 	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"

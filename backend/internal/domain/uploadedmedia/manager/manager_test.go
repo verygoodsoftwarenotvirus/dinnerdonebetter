@@ -3,10 +3,10 @@ package manager
 import (
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia/fakes"
-	uploadedmediamock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/uploadedmedia"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/uploadedmedia/fakes"
+	uploadedmediamock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/uploadedmedia/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"

@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/auditlogentries"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/migrations"
-	pgtesting "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/testing"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/auditlogentries"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/migrations"
+	pgtesting "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/testing"
 
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"
 	mockdatabase "github.com/primandproper/platform-go/v2/database/mock"

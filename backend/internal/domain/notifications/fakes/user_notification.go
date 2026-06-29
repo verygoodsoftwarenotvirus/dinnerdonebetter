@@ -1,8 +1,8 @@
 package fakes
 
 import (
-	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications/converters"
+	types "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications/converters"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 )

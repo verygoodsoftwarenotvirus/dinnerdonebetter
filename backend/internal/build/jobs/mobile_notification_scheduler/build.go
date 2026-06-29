@@ -3,10 +3,10 @@ package mobilenotificationscheduler
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/auditlogentries"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/identity"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/mealplanning"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/auditlogentries"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/mealplanning"
 
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"
 	"github.com/primandproper/platform-go/v2/database/postgres"

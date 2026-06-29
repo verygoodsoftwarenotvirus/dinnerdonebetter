@@ -3,8 +3,8 @@ package webhooks
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/webhooks/generated"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/webhooks/generated"
 
 	"github.com/primandproper/platform-go/v2/database"
 	"github.com/primandproper/platform-go/v2/database/filtering"

@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy"
-	dataprivacykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy/keys"
-	identitykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/keys"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/dataprivacy"
+	dataprivacykeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/dataprivacy/keys"
+	identitykeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/keys"
 
 	"github.com/primandproper/platform-go/v2/observability"
 	"github.com/primandproper/platform-go/v2/observability/tracing"

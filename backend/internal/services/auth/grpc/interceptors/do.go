@@ -1,8 +1,8 @@
 package interceptors
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/auth"
-	identitymanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/manager"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/auth"
+	identitymanager "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/manager"
 
 	"github.com/primandproper/platform-go/v2/authentication/tokens"
 	"github.com/primandproper/platform-go/v2/observability/logging"

@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/fakes"
-	mealplanningmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/mocks"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/recipeanalysis"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning/fakes"
+	mealplanningmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning/mocks"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning/recipeanalysis"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	"github.com/primandproper/platform-go/v2/messagequeue"
 	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"

@@ -3,12 +3,12 @@ package grpc
 import (
 	"context"
 
-	identitykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/keys"
-	waitlistkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/waitlists/keys"
-	grpcconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/converters"
-	waitlistssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/waitlists"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/types"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/waitlists/grpc/converters"
+	identitykeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/keys"
+	waitlistkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/waitlists/keys"
+	grpcconverters "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/converters"
+	waitlistssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/waitlists"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/types"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/waitlists/grpc/converters"
 
 	errorsgrpc "github.com/primandproper/platform-go/v2/errors/grpc"
 

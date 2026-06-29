@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	identitykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/keys"
+	identitykeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/keys"
 
 	platformerrors "github.com/primandproper/platform-go/v2/errors"
 	"github.com/primandproper/platform-go/v2/observability"

@@ -3,8 +3,8 @@ package api
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
-	identityindexing "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/identity/indexing"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
+	identityindexing "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/identity/indexing"
 
 	"github.com/primandproper/platform-go/v2/observability/logging"
 	"github.com/primandproper/platform-go/v2/observability/metrics"

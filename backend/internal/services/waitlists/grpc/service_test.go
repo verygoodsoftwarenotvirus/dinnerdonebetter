@@ -3,8 +3,8 @@ package grpc
 import (
 	"testing"
 
-	waitlistmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/waitlists/mock"
-	waitlistssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/waitlists"
+	waitlistmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/waitlists/mock"
+	waitlistssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/waitlists"
 
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
 	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"

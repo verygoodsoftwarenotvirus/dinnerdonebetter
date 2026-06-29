@@ -3,7 +3,7 @@ package grpc
 import (
 	"testing"
 
-	settingssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/internalops"
+	settingssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/internalops"
 
 	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"

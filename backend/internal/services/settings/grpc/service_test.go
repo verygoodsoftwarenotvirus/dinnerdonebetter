@@ -3,7 +3,7 @@ package grpc
 import (
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/settings/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/settings/mock"
 
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
 	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"

@@ -3,11 +3,11 @@ package grpc
 import (
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
-	mealplanningfakes "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/fakes"
-	mockmanagers "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/managers/mock"
-	mealplanninggrpc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/mealplanning"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning"
+	mealplanningfakes "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning/fakes"
+	mockmanagers "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning/managers/mock"
+	mealplanninggrpc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/mealplanning"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	"github.com/primandproper/platform-go/v2/fake"
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"

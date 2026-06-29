@@ -1,8 +1,8 @@
 package grpc
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authorization"
-	authsvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/auth"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authorization"
+	authsvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/auth"
 )
 
 // AuthMethodPermissions is a named type for Wire dependency injection.

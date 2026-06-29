@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments/fakes"
-	pgtesting "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/testing"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/payments"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/payments/fakes"
+	pgtesting "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/testing"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 	platformerrors "github.com/primandproper/platform-go/v2/errors"

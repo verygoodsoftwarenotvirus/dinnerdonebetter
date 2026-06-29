@@ -4,8 +4,8 @@ import (
 	"encoding/base32"
 	"fmt"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authorization"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authorization"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 

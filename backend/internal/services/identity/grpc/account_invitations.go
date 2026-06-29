@@ -3,10 +3,10 @@ package grpc
 import (
 	"context"
 
-	identitykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/keys"
-	grpcconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/converters"
-	identitysvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/identity"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/identity/grpc/converters"
+	identitykeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/keys"
+	grpcconverters "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/converters"
+	identitysvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/identity/grpc/converters"
 
 	errorsgrpc "github.com/primandproper/platform-go/v2/errors/grpc"
 	"github.com/primandproper/platform-go/v2/observability"

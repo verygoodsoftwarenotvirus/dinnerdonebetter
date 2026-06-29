@@ -4,12 +4,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/sessions"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/fakes"
-	oauthkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/keys"
-	oauthmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/sessions"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth/fakes"
+	oauthkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth/keys"
+	oauthmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	"github.com/primandproper/platform-go/v2/messagequeue"
 	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"

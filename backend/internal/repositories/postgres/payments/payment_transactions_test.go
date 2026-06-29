@@ -3,9 +3,9 @@ package payments
 import (
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments/fakes"
-	pgtesting "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/testing"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/payments"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/payments/fakes"
+	pgtesting "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/testing"
 
 	platformerrors "github.com/primandproper/platform-go/v2/errors"
 	"github.com/primandproper/platform-go/v2/identifiers"

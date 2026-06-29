@@ -7,12 +7,12 @@ import (
 	"log"
 	"maps"
 
-	identitykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/keys"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
-	mealplanningkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/keys"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/recipevalidator"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/mealplanning/generated"
+	identitykeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/keys"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning"
+	mealplanningkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning/keys"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning/recipevalidator"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/uploadedmedia"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/mealplanning/generated"
 
 	"github.com/primandproper/platform-go/v2/database"
 	"github.com/primandproper/platform-go/v2/database/filtering"

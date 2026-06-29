@@ -3,9 +3,9 @@ package internalops
 import (
 	"fmt"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/dataprivacy"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks"
 
 	"github.com/primandproper/platform-go/v2/email"
 	notifications "github.com/primandproper/platform-go/v2/notifications/mobile"

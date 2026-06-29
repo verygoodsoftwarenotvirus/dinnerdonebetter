@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	apiserver "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/build/services/api"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
+	apiserver "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/build/services/api"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
 
 	"github.com/primandproper/platform-go/v2/version"
 

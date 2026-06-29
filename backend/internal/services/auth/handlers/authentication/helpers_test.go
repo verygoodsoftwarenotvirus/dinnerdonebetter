@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication"
-	mockauthn "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication"
+	mockauthn "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	"github.com/primandproper/platform-go/v2/authentication/totp"
 	mocktotp "github.com/primandproper/platform-go/v2/authentication/totp/mock"

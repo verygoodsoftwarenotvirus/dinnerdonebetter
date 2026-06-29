@@ -1,8 +1,8 @@
 package issue_reports
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/issuereports"
 
 	"github.com/primandproper/platform-go/v2/database"
 	"github.com/primandproper/platform-go/v2/observability/logging"

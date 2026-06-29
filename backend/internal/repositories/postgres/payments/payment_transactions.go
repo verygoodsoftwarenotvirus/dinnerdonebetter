@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments"
-	paymentskeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments/keys"
-	generated "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/payments/generated"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/payments"
+	paymentskeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/payments/keys"
+	generated "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/payments/generated"
 
 	"github.com/primandproper/platform-go/v2/database"
 	"github.com/primandproper/platform-go/v2/database/filtering"

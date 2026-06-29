@@ -1,7 +1,7 @@
 package manager
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications"
 )
 
 // NotificationsDataManager defines the interface for notifications business logic.

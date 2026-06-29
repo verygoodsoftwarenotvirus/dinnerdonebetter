@@ -5,11 +5,11 @@ import (
 	"errors"
 	"testing"
 
-	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports/fakes"
-	issuereportkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports/keys"
-	issuereportsmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	types "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/issuereports"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/issuereports/fakes"
+	issuereportkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/issuereports/keys"
+	issuereportsmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/issuereports/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 	"github.com/primandproper/platform-go/v2/messagequeue"

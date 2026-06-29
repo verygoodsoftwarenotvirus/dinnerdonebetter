@@ -3,8 +3,8 @@ package mockmanagers
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
-	mealplanningmgr "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/managers"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning"
+	mealplanningmgr "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning/managers"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 

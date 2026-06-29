@@ -3,8 +3,8 @@ package privacy
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/dataprivacy"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning"
 
 	"github.com/primandproper/platform-go/v2/observability"
 	"github.com/primandproper/platform-go/v2/observability/logging"

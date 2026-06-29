@@ -1,7 +1,7 @@
 package converters
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/uploadedmedia"
 )
 
 // ConvertUploadedMediaToUploadedMediaCreationRequestInput creates a UploadedMediaCreationRequestInput from a UploadedMedia.

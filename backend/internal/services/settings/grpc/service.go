@@ -3,9 +3,9 @@ package grpc
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/sessions"
-	settingsmanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/settings/manager"
-	settingssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/settings"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/sessions"
+	settingsmanager "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/settings/manager"
+	settingssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/settings"
 
 	"github.com/primandproper/platform-go/v2/observability/logging"
 	"github.com/primandproper/platform-go/v2/observability/tracing"

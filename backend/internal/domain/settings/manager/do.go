@@ -3,8 +3,8 @@ package manager
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/settings"
-	settingsrepo "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/settings"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/settings"
+	settingsrepo "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/settings"
 
 	"github.com/primandproper/platform-go/v2/messagequeue"
 	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"

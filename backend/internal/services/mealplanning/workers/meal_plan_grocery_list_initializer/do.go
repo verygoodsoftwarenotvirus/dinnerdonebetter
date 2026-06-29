@@ -3,8 +3,8 @@ package mealplangrocerylistinitializer
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/grocerylistpreparation"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning/grocerylistpreparation"
 
 	"github.com/primandproper/platform-go/v2/messagequeue"
 	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"

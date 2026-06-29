@@ -3,8 +3,8 @@ package authentication
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/auth"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/auth"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
 
 	"github.com/primandproper/platform-go/v2/authentication/tokens"
 	tokenscfg "github.com/primandproper/platform-go/v2/authentication/tokens/config"

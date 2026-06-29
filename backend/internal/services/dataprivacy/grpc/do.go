@@ -3,9 +3,9 @@ package grpc
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/sessions"
-	dataprivacymanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy/manager"
-	dataprivacysvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/dataprivacy"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/sessions"
+	dataprivacymanager "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/dataprivacy/manager"
+	dataprivacysvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/dataprivacy"
 
 	"github.com/primandproper/platform-go/v2/observability/logging"
 	"github.com/primandproper/platform-go/v2/observability/tracing"

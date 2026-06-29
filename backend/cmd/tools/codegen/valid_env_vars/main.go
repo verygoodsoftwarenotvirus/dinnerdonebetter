@@ -12,7 +12,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
 
 	reflast "github.com/primandproper/platform-go/v2/reflection/ast"
 

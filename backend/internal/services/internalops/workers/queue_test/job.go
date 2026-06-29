@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/internalops"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/internalops"
 
 	"github.com/primandproper/platform-go/v2/identifiers"
 	"github.com/primandproper/platform-go/v2/messagequeue"

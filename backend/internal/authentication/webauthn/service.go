@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
 
 	"github.com/primandproper/platform-go/v2/identifiers"
 

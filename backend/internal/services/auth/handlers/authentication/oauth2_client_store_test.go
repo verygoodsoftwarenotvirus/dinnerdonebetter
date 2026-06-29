@@ -4,10 +4,10 @@ import (
 	"errors"
 	"testing"
 
-	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/fakes"
-	oauthmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	types "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth/fakes"
+	oauthmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
 	"github.com/primandproper/platform-go/v2/observability/tracing"

@@ -3,7 +3,7 @@ package manager
 import (
 	"slices"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
 
 	"github.com/stretchr/testify/mock"
 )

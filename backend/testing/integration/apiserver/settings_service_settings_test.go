@@ -3,11 +3,11 @@ package integration
 import (
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/settings"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/settings/converters"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/settings/fakes"
-	settingssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/settings"
-	settingsconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/settings/grpc/converters"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/settings"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/settings/converters"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/settings/fakes"
+	settingssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/settings"
+	settingsconverters "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/settings/grpc/converters"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

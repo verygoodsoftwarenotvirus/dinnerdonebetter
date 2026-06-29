@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/sessions"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy"
-	dataprivacymock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
-	dataprivacysvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/dataprivacy"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/sessions"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/dataprivacy"
+	dataprivacymock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/dataprivacy/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
+	dataprivacysvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/dataprivacy"
 
 	"github.com/primandproper/platform-go/v2/identifiers"
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"

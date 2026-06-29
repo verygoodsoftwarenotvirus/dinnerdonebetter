@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	dbcleaner "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/build/jobs/db_cleaner"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
+	dbcleaner "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/build/jobs/db_cleaner"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
 
 	_ "go.uber.org/automaxprocs"
 )

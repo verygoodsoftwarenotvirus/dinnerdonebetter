@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications"
-	notificationkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications/keys"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications"
+	notificationkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications/keys"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 	platformerrors "github.com/primandproper/platform-go/v2/errors"

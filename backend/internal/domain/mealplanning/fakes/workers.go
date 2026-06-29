@@ -1,7 +1,7 @@
 package fakes
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning"
 
 	fake "github.com/brianvoe/gofakeit/v7"
 )

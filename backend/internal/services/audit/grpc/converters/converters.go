@@ -1,9 +1,9 @@
 package converters
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
-	grpcconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/converters"
-	auditsvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/audit"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
+	grpcconverters "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/converters"
+	auditsvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/audit"
 
 	"github.com/primandproper/platform-go/v2/pointer"
 )

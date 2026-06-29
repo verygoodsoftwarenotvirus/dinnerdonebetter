@@ -1,8 +1,8 @@
 package uploadedmedia
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
-	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
+	types "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/uploadedmedia"
 
 	"github.com/primandproper/platform-go/v2/database"
 	"github.com/primandproper/platform-go/v2/observability/logging"

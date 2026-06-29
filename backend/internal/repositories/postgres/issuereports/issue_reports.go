@@ -4,11 +4,11 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
-	identitykeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/keys"
-	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports"
-	issuereportkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports/keys"
-	generated "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/issuereports/generated"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
+	identitykeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/keys"
+	types "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/issuereports"
+	issuereportkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/issuereports/keys"
+	generated "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/repositories/postgres/issuereports/generated"
 
 	"github.com/primandproper/platform-go/v2/database"
 	"github.com/primandproper/platform-go/v2/database/filtering"

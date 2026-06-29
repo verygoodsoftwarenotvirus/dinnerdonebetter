@@ -1,7 +1,7 @@
 package manager
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/dataprivacy"
 
 	"github.com/primandproper/platform-go/v2/observability/logging"
 	"github.com/primandproper/platform-go/v2/observability/tracing"

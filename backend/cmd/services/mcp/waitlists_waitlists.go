@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/waitlists"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/waitlists"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 

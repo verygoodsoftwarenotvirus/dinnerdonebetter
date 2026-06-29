@@ -1,15 +1,15 @@
 package dataprivacy
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/audit"
-	domaindataprivacy "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/settings"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/waitlists"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/audit"
+	domaindataprivacy "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/dataprivacy"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/issuereports"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/settings"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/uploadedmedia"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/waitlists"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks"
 
 	"github.com/primandproper/platform-go/v2/database"
 	"github.com/primandproper/platform-go/v2/observability/logging"

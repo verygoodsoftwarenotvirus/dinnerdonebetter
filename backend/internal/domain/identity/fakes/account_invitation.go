@@ -1,8 +1,8 @@
 package fakes
 
 import (
-	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/converters"
+	types "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/converters"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 

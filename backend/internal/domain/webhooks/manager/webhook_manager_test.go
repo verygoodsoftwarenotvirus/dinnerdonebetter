@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks/fakes"
-	webhookkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks/keys"
-	webhookmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks/fakes"
+	webhookkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks/keys"
+	webhookmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/webhooks/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 	"github.com/primandproper/platform-go/v2/messagequeue"

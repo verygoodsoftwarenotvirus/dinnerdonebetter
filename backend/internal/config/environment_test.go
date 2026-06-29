@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	authcfg "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/config"
-	dataprivacycfg "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/dataprivacy/config"
+	authcfg "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/config"
+	dataprivacycfg "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/dataprivacy/config"
 
 	analyticscfg "github.com/primandproper/platform-go/v2/analytics/config"
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"

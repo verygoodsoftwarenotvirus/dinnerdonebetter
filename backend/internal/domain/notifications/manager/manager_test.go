@@ -4,12 +4,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications/converters"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications/fakes"
-	notificationkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications/keys"
-	notificationsmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications/converters"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications/fakes"
+	notificationkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications/keys"
+	notificationsmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	"github.com/primandproper/platform-go/v2/messagequeue"
 	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"

@@ -3,8 +3,8 @@ package authentication
 import (
 	"context"
 
-	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth"
-	oauthkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/keys"
+	types "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth"
+	oauthkeys "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth/keys"
 
 	"github.com/primandproper/platform-go/v2/observability"
 	"github.com/primandproper/platform-go/v2/observability/logging"

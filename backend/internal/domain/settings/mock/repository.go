@@ -3,7 +3,7 @@ package mock
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/settings"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/settings"
 
 	"github.com/primandproper/platform-go/v2/database/filtering"
 

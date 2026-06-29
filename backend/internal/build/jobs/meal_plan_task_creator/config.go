@@ -1,7 +1,7 @@
 package mealplantaskcreator
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/config"
 
 	analyticscfg "github.com/primandproper/platform-go/v2/analytics/config"
 	databasecfg "github.com/primandproper/platform-go/v2/database/config"

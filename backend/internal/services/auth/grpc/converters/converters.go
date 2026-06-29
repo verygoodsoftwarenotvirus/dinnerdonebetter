@@ -1,9 +1,9 @@
 package converters
 
 import (
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/auth"
-	grpcconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/converters"
-	authsvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/auth"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/auth"
+	grpcconverters "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/converters"
+	authsvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/auth"
 )
 
 func ConvertGRPCUpdatePasswordRequestToPasswordUpdateInput(request *authsvc.UpdatePasswordRequest) *auth.PasswordUpdateInput {

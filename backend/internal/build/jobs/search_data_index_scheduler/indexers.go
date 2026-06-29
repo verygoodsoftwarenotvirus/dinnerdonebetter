@@ -3,10 +3,10 @@ package searchdataindexscheduler
 import (
 	"maps"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
-	coreindexing "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/identity/indexing"
-	eatingindexing "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/mealplanning/indexing"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/mealplanning"
+	coreindexing "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/identity/indexing"
+	eatingindexing "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/mealplanning/indexing"
 
 	"github.com/primandproper/platform-go/v2/search/text/indexing"
 )

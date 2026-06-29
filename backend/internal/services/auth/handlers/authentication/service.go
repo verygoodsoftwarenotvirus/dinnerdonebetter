@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/auth"
-	identitymanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/manager"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/auth"
+	identitymanager "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/manager"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth"
 
 	"github.com/primandproper/platform-go/v2/authentication/totp"
 	perrors "github.com/primandproper/platform-go/v2/errors"

@@ -3,9 +3,9 @@ package grpc
 import (
 	"context"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/sessions"
-	notificationsmanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/notifications/manager"
-	notificationssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/notifications"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/sessions"
+	notificationsmanager "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/notifications/manager"
+	notificationssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/notifications"
 
 	"github.com/primandproper/platform-go/v2/observability/logging"
 	"github.com/primandproper/platform-go/v2/observability/tracing"

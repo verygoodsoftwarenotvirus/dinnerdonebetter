@@ -1,8 +1,8 @@
 package grpc
 
 import (
-	commentsmanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/comments/manager"
-	commentssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/comments"
+	commentsmanager "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/comments/manager"
+	commentssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/comments"
 
 	"github.com/primandproper/platform-go/v2/observability/logging"
 	"github.com/primandproper/platform-go/v2/observability/tracing"

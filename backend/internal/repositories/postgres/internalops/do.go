@@ -1,7 +1,7 @@
 package internalops
 
 import (
-	domaininternalops "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/internalops"
+	domaininternalops "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/internalops"
 
 	"github.com/primandproper/platform-go/v2/database"
 	"github.com/primandproper/platform-go/v2/observability/logging"

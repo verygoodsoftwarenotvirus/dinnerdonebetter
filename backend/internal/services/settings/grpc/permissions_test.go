@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	settingssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/settings"
+	settingssvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/settings"
 
 	"github.com/primandproper/platform-go/v2/reflection"
 

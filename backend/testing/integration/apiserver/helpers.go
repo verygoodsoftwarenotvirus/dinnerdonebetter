@@ -11,14 +11,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
-	identityfakes "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/fakes"
-	grpcconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/converters"
-	authsvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/auth"
-	identitysvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/identity"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/localdev"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/identity/grpc/converters"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/pkg/client"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
+	identityfakes "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/fakes"
+	grpcconverters "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/converters"
+	authsvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/auth"
+	identitysvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/localdev"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/services/identity/grpc/converters"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/pkg/client"
 
 	"github.com/primandproper/platform-go/v2/identifiers"
 

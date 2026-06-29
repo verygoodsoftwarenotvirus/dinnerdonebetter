@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	mockauthn "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authentication/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/fakes"
-	identitymanagermock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/manager/mock"
-	oauthmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/mock"
-	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
+	mockauthn "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/authentication/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/fakes"
+	identitymanagermock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/identity/manager/mock"
+	oauthmock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/oauth/mock"
+	"github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/testutils"
 
 	"github.com/primandproper/platform-go/v2/authentication/tokens/paseto"
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"

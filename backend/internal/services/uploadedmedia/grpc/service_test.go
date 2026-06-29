@@ -3,8 +3,8 @@ package grpc
 import (
 	"testing"
 
-	uploadedmediamock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/uploadedmedia/mock"
-	uploadedmediasvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/uploaded_media"
+	uploadedmediamock "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/domain/uploadedmedia/mock"
+	uploadedmediasvc "github.com/verygoodsoftwarenotvirus/dinnerdonebetter/backend/internal/grpc/generated/services/uploaded_media"
 
 	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
 	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"
