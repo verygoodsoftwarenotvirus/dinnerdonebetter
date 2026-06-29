@@ -53,5 +53,12 @@ cmd/services/demo
 async_message_handler
 main
 
+# compiled binaries dropped at backend root by `go build ./cmd/...`
+# (anchored so they don't shadow source dirs like cmd/services/mcp, cmd/tools/encryptor)
+/mcp
+/encryptor
+/admin
+/queries
+
 TODO.md
 .claude/
