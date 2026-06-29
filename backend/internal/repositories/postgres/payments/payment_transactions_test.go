@@ -7,8 +7,8 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments/fakes"
 	pgtesting "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/testing"
 
-	platformerrors "github.com/primandproper/platform-go/errors"
-	"github.com/primandproper/platform-go/identifiers"
+	platformerrors "github.com/primandproper/platform-go/v2/errors"
+	"github.com/primandproper/platform-go/v2/identifiers"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

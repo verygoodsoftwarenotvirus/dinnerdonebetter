@@ -7,12 +7,12 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/oauth/generated"
 
-	"github.com/primandproper/platform-go/cryptography/encryption"
-	encryptioncfg "github.com/primandproper/platform-go/cryptography/encryption/config"
-	"github.com/primandproper/platform-go/database"
-	databasecfg "github.com/primandproper/platform-go/database/config"
-	"github.com/primandproper/platform-go/observability/logging"
-	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/v2/cryptography/encryption"
+	encryptioncfg "github.com/primandproper/platform-go/v2/cryptography/encryption/config"
+	"github.com/primandproper/platform-go/v2/database"
+	databasecfg "github.com/primandproper/platform-go/v2/database/config"
+	"github.com/primandproper/platform-go/v2/observability/logging"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
 )
 
 const (
@@ -22,13 +22,14 @@ const (
 // repository is the oauth2 client and token repo implemenation.
 type repository struct {
 	database.Client
-	tracer                  tracing.Tracer
-	logger                  logging.Logger
-	generatedQuerier        generated.Querier
-	auditLogEntryRepo       audit.Repository
-	oauth2ClientTokenEncDec encryption.EncryptorDecryptor
-	readDB                  *sql.DB
-	writeDB                 *sql.DB
+	tracer                   tracing.Tracer
+	logger                   logging.Logger
+	generatedQuerier         generated.Querier
+	auditLogEntryRepo        audit.Repository
+	oauth2ClientTokenEncDec  encryption.EncryptorDecryptor
+	readDB                   *sql.DB
+	writeDB                  *sql.DB
+	oauth2ClientTokenHashKey []byte
 }
 
 // ProvideOAuthRepository provides a new repository.
@@ -45,14 +46,15 @@ func ProvideOAuthRepository(
 	}
 
 	c := &repository{
-		Client:                  client,
-		readDB:                  client.ReadDB(),
-		writeDB:                 client.WriteDB(),
-		tracer:                  tracing.NewNamedTracer(tracerProvider, o11yName),
-		generatedQuerier:        generated.New(),
-		auditLogEntryRepo:       auditLogEntryRepo,
-		oauth2ClientTokenEncDec: encDec,
-		logger:                  logging.NewNamedLogger(logger, o11yName),
+		Client:                   client,
+		readDB:                   client.ReadDB(),
+		writeDB:                  client.WriteDB(),
+		tracer:                   tracing.NewNamedTracer(tracerProvider, o11yName),
+		generatedQuerier:         generated.New(),
+		auditLogEntryRepo:        auditLogEntryRepo,
+		oauth2ClientTokenEncDec:  encDec,
+		oauth2ClientTokenHashKey: []byte(cfg.OAuth2TokenEncryptionKey),
+		logger:                   logging.NewNamedLogger(logger, o11yName),
 	}
 
 	return c

@@ -16,9 +16,9 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/types"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/uploadedmedia/grpc/converters"
 
-	platformerrors "github.com/primandproper/platform-go/errors"
-	errorsgrpc "github.com/primandproper/platform-go/errors/grpc"
-	"github.com/primandproper/platform-go/identifiers"
+	platformerrors "github.com/primandproper/platform-go/v2/errors"
+	errorsgrpc "github.com/primandproper/platform-go/v2/errors/grpc"
+	"github.com/primandproper/platform-go/v2/identifiers"
 
 	"google.golang.org/grpc/codes"
 )

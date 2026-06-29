@@ -8,8 +8,8 @@ import (
 	issuereportsmanager "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/issuereports/manager"
 	issuereportssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/issue_reports"
 
-	"github.com/primandproper/platform-go/observability/logging"
-	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/v2/observability/logging"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
 )
 
 const (

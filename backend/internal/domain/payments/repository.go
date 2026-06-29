@@ -3,7 +3,7 @@ package payments
 import (
 	"context"
 
-	"github.com/primandproper/platform-go/database/filtering"
+	"github.com/primandproper/platform-go/v2/database/filtering"
 )
 
 // Repository defines the data access interface for payments entities.

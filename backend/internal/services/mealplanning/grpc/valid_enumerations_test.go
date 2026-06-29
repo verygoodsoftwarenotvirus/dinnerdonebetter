@@ -9,10 +9,10 @@ import (
 	mealplanninggrpc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/mealplanning"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	"github.com/primandproper/platform-go/fake"
-	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
-	"github.com/primandproper/platform-go/observability/tracing"
-	"github.com/primandproper/platform-go/reflection"
+	"github.com/primandproper/platform-go/v2/fake"
+	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
+	"github.com/primandproper/platform-go/v2/reflection"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

@@ -3,10 +3,10 @@ package mealplangrocerylistinitializer
 import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
 
-	analyticscfg "github.com/primandproper/platform-go/analytics/config"
-	databasecfg "github.com/primandproper/platform-go/database/config"
-	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
-	"github.com/primandproper/platform-go/observability"
+	analyticscfg "github.com/primandproper/platform-go/v2/analytics/config"
+	databasecfg "github.com/primandproper/platform-go/v2/database/config"
+	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"
+	"github.com/primandproper/platform-go/v2/observability"
 
 	"github.com/samber/do/v2"
 )

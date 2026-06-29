@@ -3,7 +3,7 @@ package indexing
 import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
 
-	textsearch "github.com/primandproper/platform-go/search/text"
+	textsearch "github.com/primandproper/platform-go/v2/search/text"
 )
 
 // NamedID pairs an identifier with a human-readable name.

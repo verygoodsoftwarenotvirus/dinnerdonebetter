@@ -4,8 +4,8 @@ import (
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/converters"
 
-	"github.com/primandproper/platform-go/database/filtering"
-	"github.com/primandproper/platform-go/identifiers"
+	"github.com/primandproper/platform-go/v2/database/filtering"
+	"github.com/primandproper/platform-go/v2/identifiers"
 )
 
 // BuildFakeAccountInstrumentOwnership builds a faked valid ingredient.

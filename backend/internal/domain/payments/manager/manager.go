@@ -12,13 +12,13 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments"
 	paymentskeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/payments/keys"
 
-	"github.com/primandproper/platform-go/database/filtering"
-	"github.com/primandproper/platform-go/identifiers"
-	"github.com/primandproper/platform-go/messagequeue"
-	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
-	"github.com/primandproper/platform-go/observability"
-	"github.com/primandproper/platform-go/observability/logging"
-	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/v2/database/filtering"
+	"github.com/primandproper/platform-go/v2/identifiers"
+	"github.com/primandproper/platform-go/v2/messagequeue"
+	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"
+	"github.com/primandproper/platform-go/v2/observability"
+	"github.com/primandproper/platform-go/v2/observability/logging"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
 )
 
 const (

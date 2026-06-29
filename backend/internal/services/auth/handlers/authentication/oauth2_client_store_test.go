@@ -9,8 +9,8 @@ import (
 	oauthmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/oauth/mock"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
-	"github.com/primandproper/platform-go/observability/tracing"
+	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

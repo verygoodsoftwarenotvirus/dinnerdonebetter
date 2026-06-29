@@ -9,11 +9,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/migrations"
 	pgtesting "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/testing"
 
-	databasecfg "github.com/primandproper/platform-go/database/config"
-	mockdatabase "github.com/primandproper/platform-go/database/mock"
-	"github.com/primandproper/platform-go/database/postgres"
-	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
-	tracingnoop "github.com/primandproper/platform-go/observability/tracing/noop"
+	databasecfg "github.com/primandproper/platform-go/v2/database/config"
+	mockdatabase "github.com/primandproper/platform-go/v2/database/mock"
+	"github.com/primandproper/platform-go/v2/database/postgres"
+	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
+	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"
 
 	"github.com/stretchr/testify/require"
 	pgcontainers "github.com/testcontainers/testcontainers-go/modules/postgres"
@@ -44,9 +44,7 @@ func buildDatabaseClientForTest(t *testing.T) (c *Repository, auditLogEntryRepo 
 func buildInertClientForTest(t *testing.T) *Repository {
 	t.Helper()
 
-	cfg := &databasecfg.Config{
-		UserDeviceTokenEncryptionKey: "blahblahblahblahblahblahblahblah",
-	}
+	cfg := &databasecfg.Config{}
 	c := ProvideNotificationsRepository(loggingnoop.NewLogger(), tracingnoop.NewTracerProvider(), nil, cfg, &mockdatabase.ClientMock{ReadDBFunc: func() *sql.DB { return nil }, WriteDBFunc: func() *sql.DB { return nil }})
 
 	return c

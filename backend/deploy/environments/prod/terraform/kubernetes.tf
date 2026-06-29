@@ -113,7 +113,6 @@ resource "kubernetes_secret_v1" "api_service_config" {
 
   data = {
     OAUTH2_TOKEN_ENCRYPTION_KEY        = random_string.oauth2_token_encryption_key.result
-    USER_DEVICE_TOKEN_ENCRYPTION_KEY   = random_string.user_device_token_encryption_key.result
     JWT_SIGNING_KEY                    = base64encode(random_string.jwt_signing_key.result)
     DATABASE_HOST                      = google_sql_database_instance.prod.private_ip_address
     POSTHOG_API_KEY                    = var.POSTHOG_API_KEY

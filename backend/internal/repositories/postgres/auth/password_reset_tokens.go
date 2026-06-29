@@ -8,11 +8,11 @@ import (
 	authkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/auth/keys"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/auth/generated"
 
-	"github.com/primandproper/platform-go/database"
-	platformerrors "github.com/primandproper/platform-go/errors"
-	"github.com/primandproper/platform-go/identifiers"
-	"github.com/primandproper/platform-go/observability"
-	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/v2/database"
+	platformerrors "github.com/primandproper/platform-go/v2/errors"
+	"github.com/primandproper/platform-go/v2/identifiers"
+	"github.com/primandproper/platform-go/v2/observability"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
 )
 
 const (

@@ -7,14 +7,14 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/internalops"
 	queuetest "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/internalops/workers/queue_test"
 
-	databasecfg "github.com/primandproper/platform-go/database/config"
-	"github.com/primandproper/platform-go/database/postgres"
-	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
-	"github.com/primandproper/platform-go/observability"
-	loggingcfg "github.com/primandproper/platform-go/observability/logging/config"
-	"github.com/primandproper/platform-go/observability/metrics"
-	metricscfg "github.com/primandproper/platform-go/observability/metrics/config"
-	tracingcfg "github.com/primandproper/platform-go/observability/tracing/config"
+	databasecfg "github.com/primandproper/platform-go/v2/database/config"
+	"github.com/primandproper/platform-go/v2/database/postgres"
+	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"
+	"github.com/primandproper/platform-go/v2/observability"
+	loggingcfg "github.com/primandproper/platform-go/v2/observability/logging/config"
+	"github.com/primandproper/platform-go/v2/observability/metrics"
+	metricscfg "github.com/primandproper/platform-go/v2/observability/metrics/config"
+	tracingcfg "github.com/primandproper/platform-go/v2/observability/tracing/config"
 
 	"github.com/samber/do/v2"
 )

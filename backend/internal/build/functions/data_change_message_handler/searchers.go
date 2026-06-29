@@ -6,10 +6,10 @@ import (
 	identityindexing "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/identity/indexing"
 	eatingindexing "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/mealplanning/indexing"
 
-	"github.com/primandproper/platform-go/observability/logging"
-	"github.com/primandproper/platform-go/observability/metrics"
-	"github.com/primandproper/platform-go/observability/tracing"
-	textsearchcfg "github.com/primandproper/platform-go/search/text/config"
+	"github.com/primandproper/platform-go/v2/observability/logging"
+	"github.com/primandproper/platform-go/v2/observability/metrics"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
+	textsearchcfg "github.com/primandproper/platform-go/v2/search/text/config"
 
 	"github.com/samber/do/v2"
 )

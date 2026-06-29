@@ -8,11 +8,11 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/converters"
 	mealplanningkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/keys"
 
-	"github.com/primandproper/platform-go/database/filtering"
-	platformerrors "github.com/primandproper/platform-go/errors"
-	"github.com/primandproper/platform-go/observability"
-	platformkeys "github.com/primandproper/platform-go/observability/keys"
-	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/v2/database/filtering"
+	platformerrors "github.com/primandproper/platform-go/v2/errors"
+	"github.com/primandproper/platform-go/v2/observability"
+	platformkeys "github.com/primandproper/platform-go/v2/observability/keys"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
 )
 
 // Interface, struct, and constructor are defined in manager.go.

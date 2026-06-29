@@ -6,8 +6,8 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/internalops"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/internalops/generated"
 
-	platformerrors "github.com/primandproper/platform-go/errors"
-	"github.com/primandproper/platform-go/observability"
+	platformerrors "github.com/primandproper/platform-go/v2/errors"
+	"github.com/primandproper/platform-go/v2/observability"
 )
 
 func (q *repository) CreateQueueTestMessage(ctx context.Context, id, queueName string) error {

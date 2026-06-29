@@ -10,7 +10,7 @@ import (
 
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
 
-	"github.com/primandproper/platform-go/identifiers"
+	"github.com/primandproper/platform-go/v2/identifiers"
 
 	"github.com/go-webauthn/webauthn/protocol"
 	"github.com/go-webauthn/webauthn/webauthn"

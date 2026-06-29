@@ -5,7 +5,7 @@ import (
 
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/config"
 
-	"github.com/primandproper/platform-go/encoding"
+	"github.com/primandproper/platform-go/v2/encoding"
 )
 
 const (

@@ -5,7 +5,7 @@ import (
 	grpcconverters "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/converters"
 	waitlistssvc "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/grpc/generated/services/waitlists"
 
-	"github.com/primandproper/platform-go/identifiers"
+	"github.com/primandproper/platform-go/v2/identifiers"
 )
 
 func ConvertWaitlistToGRPCWaitlist(waitlist *types.Waitlist) *waitlistssvc.Waitlist {

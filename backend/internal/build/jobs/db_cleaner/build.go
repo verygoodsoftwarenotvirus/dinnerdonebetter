@@ -7,12 +7,12 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/internalops"
 	dbcleaner "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/oauth/workers/db_cleaner"
 
-	databasecfg "github.com/primandproper/platform-go/database/config"
-	"github.com/primandproper/platform-go/database/postgres"
-	"github.com/primandproper/platform-go/observability"
-	loggingcfg "github.com/primandproper/platform-go/observability/logging/config"
-	metricscfg "github.com/primandproper/platform-go/observability/metrics/config"
-	tracingcfg "github.com/primandproper/platform-go/observability/tracing/config"
+	databasecfg "github.com/primandproper/platform-go/v2/database/config"
+	"github.com/primandproper/platform-go/v2/database/postgres"
+	"github.com/primandproper/platform-go/v2/observability"
+	loggingcfg "github.com/primandproper/platform-go/v2/observability/logging/config"
+	metricscfg "github.com/primandproper/platform-go/v2/observability/metrics/config"
+	tracingcfg "github.com/primandproper/platform-go/v2/observability/tracing/config"
 
 	"github.com/samber/do/v2"
 )

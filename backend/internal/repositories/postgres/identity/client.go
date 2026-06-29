@@ -7,10 +7,10 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/identity/generated"
 
-	"github.com/primandproper/platform-go/database"
-	"github.com/primandproper/platform-go/observability/logging"
-	"github.com/primandproper/platform-go/observability/tracing"
-	"github.com/primandproper/platform-go/random"
+	"github.com/primandproper/platform-go/v2/database"
+	"github.com/primandproper/platform-go/v2/observability/logging"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
+	"github.com/primandproper/platform-go/v2/random"
 )
 
 const (

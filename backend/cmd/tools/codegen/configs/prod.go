@@ -15,38 +15,38 @@ import (
 	uploadedmediacfg "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/services/uploadedmedia/config"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	analyticscfg "github.com/primandproper/platform-go/analytics/config"
-	analyticsposthog "github.com/primandproper/platform-go/analytics/posthog"
-	tokenscfg "github.com/primandproper/platform-go/authentication/tokens/config"
-	circuitbreakingcfg "github.com/primandproper/platform-go/circuitbreaking/config"
-	encryptioncfg "github.com/primandproper/platform-go/cryptography/encryption/config"
-	databasecfg "github.com/primandproper/platform-go/database/config"
-	emailcfg "github.com/primandproper/platform-go/email/config"
-	"github.com/primandproper/platform-go/email/resend"
-	"github.com/primandproper/platform-go/encoding"
-	featureflagscfg "github.com/primandproper/platform-go/featureflags/config"
-	"github.com/primandproper/platform-go/featureflags/posthog"
-	msgconfig "github.com/primandproper/platform-go/messagequeue/config"
-	"github.com/primandproper/platform-go/messagequeue/pubsub"
-	notificationscfg "github.com/primandproper/platform-go/notifications/mobile/config"
-	"github.com/primandproper/platform-go/observability"
-	"github.com/primandproper/platform-go/observability/logging"
-	loggingcfg "github.com/primandproper/platform-go/observability/logging/config"
-	logotelgrpc "github.com/primandproper/platform-go/observability/logging/otelgrpc"
-	metricscfg "github.com/primandproper/platform-go/observability/metrics/config"
-	"github.com/primandproper/platform-go/observability/metrics/otelgrpc"
-	profilingcfg "github.com/primandproper/platform-go/observability/profiling/config"
-	"github.com/primandproper/platform-go/observability/profiling/pyroscope"
-	tracingcfg "github.com/primandproper/platform-go/observability/tracing/config"
-	"github.com/primandproper/platform-go/observability/tracing/oteltrace"
-	"github.com/primandproper/platform-go/routing/chi"
-	routingcfg "github.com/primandproper/platform-go/routing/config"
-	"github.com/primandproper/platform-go/search/text/algolia"
-	textsearchcfg "github.com/primandproper/platform-go/search/text/config"
-	"github.com/primandproper/platform-go/server/grpc"
-	"github.com/primandproper/platform-go/server/http"
-	uploadscfg "github.com/primandproper/platform-go/uploads/config"
-	"github.com/primandproper/platform-go/uploads/objectstorage"
+	analyticscfg "github.com/primandproper/platform-go/v2/analytics/config"
+	analyticsposthog "github.com/primandproper/platform-go/v2/analytics/posthog"
+	tokenscfg "github.com/primandproper/platform-go/v2/authentication/tokens/config"
+	circuitbreakingcfg "github.com/primandproper/platform-go/v2/circuitbreaking/config"
+	encryptioncfg "github.com/primandproper/platform-go/v2/cryptography/encryption/config"
+	databasecfg "github.com/primandproper/platform-go/v2/database/config"
+	emailcfg "github.com/primandproper/platform-go/v2/email/config"
+	"github.com/primandproper/platform-go/v2/email/resend"
+	"github.com/primandproper/platform-go/v2/encoding"
+	featureflagscfg "github.com/primandproper/platform-go/v2/featureflags/config"
+	"github.com/primandproper/platform-go/v2/featureflags/posthog"
+	msgconfig "github.com/primandproper/platform-go/v2/messagequeue/config"
+	"github.com/primandproper/platform-go/v2/messagequeue/pubsub"
+	notificationscfg "github.com/primandproper/platform-go/v2/notifications/mobile/config"
+	"github.com/primandproper/platform-go/v2/observability"
+	"github.com/primandproper/platform-go/v2/observability/logging"
+	loggingcfg "github.com/primandproper/platform-go/v2/observability/logging/config"
+	logotelgrpc "github.com/primandproper/platform-go/v2/observability/logging/otelgrpc"
+	metricscfg "github.com/primandproper/platform-go/v2/observability/metrics/config"
+	"github.com/primandproper/platform-go/v2/observability/metrics/otelgrpc"
+	profilingcfg "github.com/primandproper/platform-go/v2/observability/profiling/config"
+	"github.com/primandproper/platform-go/v2/observability/profiling/pyroscope"
+	tracingcfg "github.com/primandproper/platform-go/v2/observability/tracing/config"
+	"github.com/primandproper/platform-go/v2/observability/tracing/oteltrace"
+	"github.com/primandproper/platform-go/v2/routing/chi"
+	routingcfg "github.com/primandproper/platform-go/v2/routing/config"
+	"github.com/primandproper/platform-go/v2/search/text/algolia"
+	textsearchcfg "github.com/primandproper/platform-go/v2/search/text/config"
+	"github.com/primandproper/platform-go/v2/server/grpc"
+	"github.com/primandproper/platform-go/v2/server/http"
+	uploadscfg "github.com/primandproper/platform-go/v2/uploads/config"
+	"github.com/primandproper/platform-go/v2/uploads/objectstorage"
 )
 
 const (
@@ -164,18 +164,17 @@ func buildProdConfig() *config.APIServiceConfig {
 			StartupDeadline: 60 * time.Second,
 		},
 		Database: databasecfg.Config{
-			Provider:                     databasecfg.ProviderPostgres,
-			Encryption:                   encryptioncfg.Config{Provider: encryptioncfg.ProviderSalsa20},
-			OAuth2TokenEncryptionKey:     "",
-			UserDeviceTokenEncryptionKey: "",
-			Debug:                        false,
-			RunMigrations:                true,
-			LogQueries:                   false,
-			MaxPingAttempts:              maxAttempts,
-			PingWaitPeriod:               time.Second,
-			MaxIdleConns:                 5,
-			MaxOpenConns:                 7,
-			ConnMaxLifetime:              30 * time.Minute,
+			Provider:                 databasecfg.ProviderPostgres,
+			Encryption:               encryptioncfg.Config{Provider: encryptioncfg.ProviderSalsa20},
+			OAuth2TokenEncryptionKey: "",
+			Debug:                    false,
+			RunMigrations:            true,
+			LogQueries:               false,
+			MaxPingAttempts:          maxAttempts,
+			PingWaitPeriod:           time.Second,
+			MaxIdleConns:             5,
+			MaxOpenConns:             7,
+			ConnMaxLifetime:          30 * time.Minute,
 			ReadConnection: databasecfg.ConnectionDetails{
 				Username:   "api_db_user",
 				Database:   "dinner-done-better",

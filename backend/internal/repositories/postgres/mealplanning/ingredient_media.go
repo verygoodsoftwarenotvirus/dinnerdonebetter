@@ -7,10 +7,10 @@ import (
 	mealplanningkeys "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/keys"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/repositories/postgres/mealplanning/generated"
 
-	platformerrors "github.com/primandproper/platform-go/errors"
-	"github.com/primandproper/platform-go/identifiers"
-	"github.com/primandproper/platform-go/observability"
-	"github.com/primandproper/platform-go/observability/tracing"
+	platformerrors "github.com/primandproper/platform-go/v2/errors"
+	"github.com/primandproper/platform-go/v2/identifiers"
+	"github.com/primandproper/platform-go/v2/observability"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
 )
 
 var _ mealplanning.IngredientMediaDataManager = (*repository)(nil)

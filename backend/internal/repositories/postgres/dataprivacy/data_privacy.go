@@ -9,8 +9,8 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/settings"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
 
-	platformerrors "github.com/primandproper/platform-go/errors"
-	"github.com/primandproper/platform-go/observability"
+	platformerrors "github.com/primandproper/platform-go/v2/errors"
+	"github.com/primandproper/platform-go/v2/observability"
 )
 
 // FetchUserDataCollection retrieves all user-associated data for GDPR/CCPA disclosure.

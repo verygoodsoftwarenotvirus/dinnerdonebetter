@@ -7,9 +7,9 @@ import (
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/webhooks"
 
-	"github.com/primandproper/platform-go/email"
-	notifications "github.com/primandproper/platform-go/notifications/mobile"
-	textsearch "github.com/primandproper/platform-go/search/text"
+	"github.com/primandproper/platform-go/v2/email"
+	notifications "github.com/primandproper/platform-go/v2/notifications/mobile"
+	textsearch "github.com/primandproper/platform-go/v2/search/text"
 )
 
 // BuildQueueTestMessage returns a message with TestID set for the given topic. Non-empty TestID triggers queue test behavior.

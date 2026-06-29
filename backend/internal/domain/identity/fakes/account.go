@@ -4,7 +4,7 @@ import (
 	types "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/identity/converters"
 
-	"github.com/primandproper/platform-go/database/filtering"
+	"github.com/primandproper/platform-go/v2/database/filtering"
 
 	fake "github.com/brianvoe/gofakeit/v7"
 )

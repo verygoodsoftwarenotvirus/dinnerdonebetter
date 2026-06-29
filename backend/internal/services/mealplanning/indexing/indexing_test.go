@@ -8,11 +8,11 @@ import (
 	mealplanningmock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/mealplanning/mocks"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
-	tracingnoop "github.com/primandproper/platform-go/observability/tracing/noop"
-	"github.com/primandproper/platform-go/reflection"
-	textsearch "github.com/primandproper/platform-go/search/text"
-	mocksearch "github.com/primandproper/platform-go/search/text/mock"
+	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
+	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"
+	"github.com/primandproper/platform-go/v2/reflection"
+	textsearch "github.com/primandproper/platform-go/v2/search/text"
+	mocksearch "github.com/primandproper/platform-go/v2/search/text/mock"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -7,9 +7,9 @@ import (
 
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/branding"
 
-	"github.com/primandproper/platform-go/email"
-	"github.com/primandproper/platform-go/observability/logging"
-	"github.com/primandproper/platform-go/observability/tracing"
+	"github.com/primandproper/platform-go/v2/email"
+	"github.com/primandproper/platform-go/v2/observability/logging"
+	"github.com/primandproper/platform-go/v2/observability/tracing"
 )
 
 const (

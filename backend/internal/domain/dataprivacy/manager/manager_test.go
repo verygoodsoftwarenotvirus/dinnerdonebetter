@@ -8,10 +8,10 @@ import (
 	dataprivacymock "github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/domain/dataprivacy/mock"
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/testutils"
 
-	"github.com/primandproper/platform-go/identifiers"
-	loggingnoop "github.com/primandproper/platform-go/observability/logging/noop"
-	tracingnoop "github.com/primandproper/platform-go/observability/tracing/noop"
-	"github.com/primandproper/platform-go/reflection"
+	"github.com/primandproper/platform-go/v2/identifiers"
+	loggingnoop "github.com/primandproper/platform-go/v2/observability/logging/noop"
+	tracingnoop "github.com/primandproper/platform-go/v2/observability/tracing/noop"
+	"github.com/primandproper/platform-go/v2/reflection"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

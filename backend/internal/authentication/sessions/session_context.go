@@ -7,10 +7,10 @@ import (
 
 	"github.com/dinnerdonebetter/dinnerdonebetter/backend/internal/authorization"
 
-	platformerrors "github.com/primandproper/platform-go/errors"
-	platformkeys "github.com/primandproper/platform-go/observability/keys"
-	"github.com/primandproper/platform-go/observability/logging"
-	"github.com/primandproper/platform-go/routing"
+	platformerrors "github.com/primandproper/platform-go/v2/errors"
+	platformkeys "github.com/primandproper/platform-go/v2/observability/keys"
+	"github.com/primandproper/platform-go/v2/observability/logging"
+	"github.com/primandproper/platform-go/v2/routing"
 )
 
 func init() {
